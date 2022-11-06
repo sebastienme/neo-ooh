@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --shopping-color: #00AAF3;
+    --otg-color: #f38000;
+    --fitness-color: #e83641;
+    --neo-color: #0b0d25;
+    --top-menu-height: 35px;
+    --bottom-menu-height: 80px;
+}
+
+body {
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 300,
+    'GRAD' 200,
+    'opsz' 48
+  }
+
+header {
+    background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(images/complexe-desjardins.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+menu {
+    text-transform: uppercase;
+}
+
+.top-menu {
+    display: flex;
+    justify-content: space-between;
+    height: var(--top-menu-height);
+    align-items: center;
+}
+
+.language-toggle {
+    font-size: 0.8rem;
+    margin-left: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-right: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+}
+
+.top-menu.right {
+    gap: 20px;
+}
+
+.login {
+    padding: 5px 20px 5px 20px;
+}
+.contact-us {
+    background-color: var(--shopping-color);
+    font-weight: 700;
+    padding: 5px 20px 5px 20px;
+}
+
+.bottom-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--neo-color);
+    height: var(--bottom-menu-height);
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style-type: none;
+    gap: 60px;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.nav-search {
+    display: flex;
+    border-left: 1px solid #ffffff;
+    padding-left: 30px;
+    margin-right: 30px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    height: calc(100vh - var(--bottom-menu-height) - var(--top-menu-height));
+    padding-left: 400px;
+    padding-right: 400px;
+    padding-top: 200px;
+}
+
+.hero-text {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 98%;
+}
+
+.sub-hero {
+    font-size: 1.2rem;
+}
+
+#trends {
+    display: block;
+}
+
+.scroll {
+    margin-top: auto;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.material-symbols-outlined.icon {
+    font-size: 2.2rem;
+}
+
+@media only screen and (max-width: 1700px) {
+    .hero {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+}
+
