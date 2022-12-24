@@ -14,31 +14,53 @@
 <body>
     <header>
         <menu class="top-menu">
-            <div class="language-toggle">FR</div>
-            <div class="top-menu right">
-                <div class="nav about-us">About Us</div>
-                <div class="nav login">Login</div>
-                <div class="nav contact-us">Contact us</div>
-            </div>    
+            <div class="top-menu__language-toggle">
+                <a href="">FR</a>
+            </div>
+            <ul class="top-menu right">
+                <li class="top-menu__nav about-us"><a href="">About Us</a></li>
+                <li class="top-menu__nav login"><a href="">Login</a></li>
+                <li class="top-menu__nav contact-us"><a href="">Contact US</a></li>
+            </ul>    
         </menu>
         <menu class="bottom-menu">
-            <div class="nav-logo"><img class="logo" src="images/shopping.light.png" alt="neo shopping logo"></div>
-            <div class="navbar">
-                <ul class="navbar-menu">
-                    <li class="navbar-button">Networks</li>
-                    <li class="navbar-button">Products</li>
-                    <li class="navbar-button">Partners</li>
-                    <li class="navbar-button">Markets</li>
-                    <li class="navbar-button">Advertisers</li>
+            <div class="bottom-menu__nav-logo"><img class="logo" src="images/shopping.light.png" alt="neo shopping logo"></div>
+            <div class="bottom-menu__navbar">
+                <ul class="navbar__menu">
+                    <li class="menu__link">
+                        <a class="menu-link-title" href="">Networks</a>
+                        <div class="menu__link__dropdown full-block"></div>
+                        <ul class="menu__link__dropdown link-js">
+                            <li class="dropdown__elements" data-network="shopping"><a href="">Shopping Mall</a></li>
+                            <li class="dropdown__elements" data-network="on-the-go"><a href="">Service Station</a></li>
+                            <li class="dropdown__elements" data-network="on-the-go"><a href="">Convenience Store</a></li>
+                            <li class="dropdown__elements" data-network="fitness"><a href="">Gym</a></li>
+                            <li class="dropdown__elements" data-network="mobile"><a href="">Mobile</a></li>
+                            <li class="dropdown__elements" data-network="speed"><a href="">Experiential</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__link"><a href="">Products</a></li>
+                    <li class="menu__link"><a href="">Partners</a></li>
+                    <li class="menu__link"><a href="">Markets</a></li>
+                    <li class="menu__link"><a href="">Advertisers</a></li>
                 </ul>
-                <div class="nav-search"><span class="material-symbols-outlined">search</span></div>
+                <div class="navbar__search">
+                    <span class="material-symbols-outlined">search</span>
+                    <span><form method="GET" action="" role="search" id="search-form">
+                <input required="" name="" placeholder="Search" id="search-input" spellcheck="false" dir="auto" type="text">
+                <button class="search-btn" type="submit"></button>
+                    </form>
+                    </span>
+                  </div>
             </div>
         </menu>
         <section class="hero">
-            <div></div>
-            <div class="hero-text">Reaching your Audience with an expanding network in retail, fitness, and daily commute.</div>
-            <section class="sub-hero">
-                <span id="trends">Trends in Out-of-Home</span>
+            <div class="hero__spacer"></div>
+            <div class="hero__text">
+                <h1>Reaching your Audience with an expanding network in retail, fitness, and daily commute.</h1>
+            </div>
+            <section class="hero__sub">
+                <span id="sub__trends">Trends in Out-of-Home</span>
                 Growing urbanisation, increasing digitisation and accelerating technological innovation within the sector,
                 means Out-of-Home communicates faster, more effectively, with greater flexibility, and increasingly benefits
                 from a more reliable accountability.
