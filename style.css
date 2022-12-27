@@ -14,6 +14,7 @@
     --neo-color: #0b0d25;
     --light-color: #ffffff;
 
+    --jumbo-text: 3.815rem;
     --h1-text: 3.052rem;
     --h2-text: 2.441rem;
     --h3-text: 1.953rem;
@@ -48,6 +49,7 @@ h1 {
   margin-top: 0;
   font-size: var(--h1-text);
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 h2 {font-size: var(--h2-text);}
@@ -142,11 +144,16 @@ menu {text-transform: uppercase;}
 
 .bottom-menu__nav-logo {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-top: 10px;
+
+    min-height: var(--bottom-menu-height);
 }
 
 .logo {
-    width: 200px;
+    width: 150px;
     height: auto;
 }
 
@@ -221,7 +228,7 @@ menu {text-transform: uppercase;}
 	cursor: pointer;
 
 	margin: 3px 0;
-	padding: 0 0 0 34px;
+	padding: 0 20px 0 20px;
 	
     height: 37px;
     width: 0;
@@ -282,7 +289,7 @@ menu {text-transform: uppercase;}
     padding-right: 400px;
     padding-top: 200px;
 
-    height: calc(100vh - var(--bottom-menu-height) - var(--top-menu-height));
+    min-height: calc(100vh - var(--bottom-menu-height) - var(--top-menu-height));
 }
 
 .hero__text, .hero__sub, .hero-sub, .hero-sub__sub {text-transform: uppercase;}
@@ -316,9 +323,8 @@ menu {text-transform: uppercase;}
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
+
     min-height: 100vh;
-    height: calc(100vh - var(--bottom-menu-height) - var(--top-menu-height));
 }
 
 .hero-sub__text {
@@ -356,6 +362,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 20px;
 }
 
 .footer-bottom-menu__rights {
@@ -366,10 +373,219 @@ address {
     line-height: 1.5;
 }
 
+/*<---end of index---> */
+/*<---start of shopping.html---> */
+.header-networks {
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url(images/complexe-desjardins.jpg);
+
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-networks > .scroll {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    padding-bottom: 15px;
+    margin: 0;
+
+    min-height: calc(100vh - var(--bottom-menu-height) - var(--top-menu-height));
+}
+
+.main-networks__containter-main__top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
+
+    padding-left: 100px;
+
+    min-height: 60vh;
+}
+
+.main-networks__containter-main__top.shopping {
+    color: var(--shopping-color);
+}
+
+.prompt {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.main-networks__containter-main__top__titles {
+    padding-right: 500px;
+}
+
+.main-title > h1 {
+    font-size: var(--jumbo-text);
+}
+
+.sub-title {
+
+    font-size: var(--h5-text);
+}
+
+.main-networks__containter-main__bottom {
+    background: url(images/digital-spectacular-CIA.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    min-height: 100vh;
+}
+
+.main-networks__containter-main__top.dark-section {
+    background-color: var(--neo-color);
+    color: var(--light-color);
+}
+
+.main-networks__containter-main__top__titles.dark-section {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-right: 0;
+}
+
+.main-title.dark-section {
+    padding-right: 800px;
+}
+
+.sub-title > .dark-section {
+    padding-right: 300px;
+}
+
+.sub-title > span {
+    text-transform: uppercase;
+    font-size: var(--small-text);
+}
+
+.main-networks__containter-main__bottom.dark-section {
+    background: url(images/digital-spectacular-erin-mills.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*<---end of shopping.html---> */
+
 @media only screen and (max-width: 1700px) {
-    .hero {
+    .hero, .hero-sub {
         padding-left: 200px;
         padding-right: 200px;
     }
 }
 
+@media only screen and (max-width: 1300px) {
+    body {
+        min-width: 100vh;
+    }
+
+    .top-menu__language-toggle {
+        font-size: var(--smaller-text);
+    }
+
+    .top-menu {
+        font-size: var(--small-text);
+    }
+
+    .navbar__menu {
+        font-size: 1rem;
+    }
+
+    #search-input:focus {
+        font-size: var(--small-text);
+        
+        height: 30px;
+        width: 200px;
+        margin: 2px 0;
+    }
+    
+    .hero {
+        padding-top: 100px;
+    }
+
+    .hero__sub, .hero-sub__sub {
+        font-size: 1rem;
+    }
+
+    .hero-sub__text {
+        padding-right: 35%;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .top-menu.right {
+        gap: 10px;
+    }
+
+    .navbar__menu {
+        gap: 40px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+
+    .top-menu.right {
+        gap: 8px;
+    }
+
+    .navbar__menu {
+        gap: 30px;
+    }
+
+    #search-input:focus {
+        width: 170px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    h1 {
+        font-size: var(--h2-text);
+        margin: 0;
+    }
+
+    h5 {
+        font-size: 1rem;
+        margin: 2.5rem 0 1rem;
+    }
+
+    .logo {
+        width: 125px;
+    }
+
+    .hero__sub, .hero-sub__sub, address {
+        font-size: var(--small-text);
+    }
+
+    footer {
+        line-height: 1.25;
+    }
+
+    .footer-top-menu__list li > .hover-link {
+        font-size: var(--smaller-text);
+    }
+
+    .footer-bottom-menu {
+        font-size: var(--small-text);
+    }
+
+    .linkedin-icon {
+        width: 40px;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 576px) {
+    
+}
