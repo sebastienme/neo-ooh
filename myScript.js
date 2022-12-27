@@ -1,14 +1,21 @@
+//....Start....
+//Function that get the height of the menu list
+//and set the height of the dropdown menu accordingly to this height
 const fullBlock = document.querySelector('.full-block');
 const dropDownMenu = document.querySelector('.link-js');
-const menuLink = document.querySelector('.menu__link')
+const menuLink = document.querySelector('.menu__link');
 const compStylesDropDownMenu = getComputedStyle(dropDownMenu);
 
 menuLink.addEventListener("mouseenter", function() {
     const dropDownMenuHeight = compStylesDropDownMenu.getPropertyValue('height');
     fullBlock.style.height = `${dropDownMenuHeight}`;
 })
+//....Finish....
 
 
+//....Start....
+//Function that change the color of the hover effect depending on
+//the date-network attribute
 const dropdownElements = document.querySelectorAll('.dropdown__elements');
 
 dropdownElements.forEach((element) => {
@@ -33,5 +40,8 @@ dropdownElements.forEach((element) => {
         }
     })
 })
+//....Finish....
+
+
 
 
