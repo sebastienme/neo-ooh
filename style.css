@@ -31,7 +31,10 @@
     --bottom-menu-height: 80px;
 }
 
-html {font-size: 100%;}
+html {
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
 
 body {
     color: var(--light-color);
@@ -348,6 +351,8 @@ footer {
     flex-direction: column;
     justify-content: space-between;
 
+    padding-top: 50px;
+
     background-color: var(--neo-color);
     min-height: 50vh;
 }
@@ -397,6 +402,10 @@ address {
     margin: 0;
 
     min-height: calc(100vh - var(--bottom-menu-height) - var(--top-menu-height));
+}
+
+.main-networks__containter-main {
+    background-color: var(--light-color);
 }
 
 .main-networks__containter-main__top {
@@ -596,6 +605,14 @@ address {
     min-width: 250px;
 }
 
+.main-markets__block-expanded {
+    border: 1px solid var(--light-color);
+    border-bottom: none;
+
+    height: 45px;
+    min-width: 250px;
+}
+
 .main-markets__block__content {
     display: flex;
     flex-direction: column;
@@ -609,12 +626,17 @@ address {
     padding: 10px 0 0 10px;
 }
 
+.main-markets__block__content__title > * {
+    cursor: pointer;
+}
+
 .main-markets__block__content h4 {
     margin: 0;
     font-weight: 600;
+    scroll-margin-block-start: 2em;
 }
 
-#expand {
+.expand {
     display: flex;
     justify-content: flex-end;
 
@@ -622,7 +644,11 @@ address {
     margin-top: auto;
 }
 
-#expand .material-symbols-outlined {
+.expand > * {
+    cursor: pointer;
+}
+
+.expand .material-symbols-outlined {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -631,14 +657,31 @@ address {
 .main-markets-expanded {
     display: flex;
     flex-direction: column;
-
+    
     margin-left: auto;
     margin-right: auto;
  
     padding: 30px;
 
+    background-color: var(--neo-color);
     border: 1px solid var(--light-color);
     max-width: 1300px;
+}
+
+.main-markets-expanded.quebec {
+    display: none;
+}
+
+.main-markets-expanded.ontario {
+    display: none;
+}
+
+.main-markets-expanded.east {
+    display: none;
+}
+
+.main-markets-expanded.west {
+    display: none;
 }
 
 .main-markets-expanded__title {
@@ -667,6 +710,10 @@ address {
     font-weight: 400;
 }
 
+.main-markets-expanded h5:hover {
+    color: var(--shopping-color);
+}
+
 .markets__content__block {
     display: flex;
     flex-direction: column;
@@ -678,7 +725,126 @@ address {
     font-size: var(--small-text);
 }
 
+.expand-less {
+    display: flex;
+    justify-content: flex-end;
+
+    padding: 0 10px 5px 0;
+    margin-top: auto;
+}
+
+.expand-less > * {
+    cursor: pointer;
+}
+
+.expand-less .material-symbols-outlined {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 /*<---end of markets.html---> */
+/*<---start of markets-regions.html---> */
+
+.header-markets-regions {
+    background: url(images/montreal-midnight.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-regions {
+    min-height: calc(100vh - var(--bottom-menu-height) - var(--top-menu-height));
+}
+
+.hero-regions__top {
+    min-height: calc((100vh - var(--bottom-menu-height) - var(--top-menu-height)) / 2);
+}
+
+.hero-regions__top__title {
+    padding: 50px 0 0 25px;
+}
+
+.hero-regions__top__title > h1 {
+    font-weight: 600;
+}
+
+.hero-regions__bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+
+    background-color: var(--light-color);
+
+    padding: 0 300px 0 100px;
+
+    min-height: calc((100vh - var(--bottom-menu-height) - var(--top-menu-height)) / 2);
+}
+
+.hero-regions__bottom__title {
+    color: var(--dark-color);
+    font-size: var(--h3-text);
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.hero-regions__bottom__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    color: var(--dark-color);
+}
+
+.regions-statistics__title {
+    color: var(--shopping-color);
+
+    padding-left: 100px;
+}
+
+.regions-statistics__data {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    
+    background-color: var(--shopping-color);
+
+    height: 90px;
+}
+
+.regions-statistics__data__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border-left: 1px solid var(--light-color);
+    max-height: 90px;
+}
+
+.regions-statistics__data__items__title.first {
+    border-left: none;
+}
+
+.regions-statistics__data__items__title {
+    text-align: center;
+
+    font-size: var(--h2-text);
+    font-weight: 700;
+    line-height: 1;
+
+    height: fit-content;
+}
+
+.regions-statistics__data__items__sub-title {
+    text-align: center;
+
+    font-size: var(--small-text);
+
+    
+}
+
+/*<---end of markets-regions.html---> */
+
+
 @media only screen and (max-width: 1700px) {
     .hero, .hero-sub {
         padding-left: 200px;

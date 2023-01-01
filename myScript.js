@@ -14,7 +14,7 @@ menuLink.addEventListener("mouseenter", function() {
 
 
 //....Start....
-//Function that change the color of the hover effect depending on
+//Function that change the color of the hover effect in Networks menu depending on
 //the date-network attribute
 const dropdownElements = document.querySelectorAll('.dropdown__elements');
 
@@ -45,6 +45,61 @@ dropdownElements.forEach((element) => {
 
 
 //....Start....
+//Function that expand/display the sub-markets (Greater Mtl, Greater TOR, etc,) tab for
+//each main markets (Quebec, Ontario, etc.)
+const mainMarketsBlock = document.querySelectorAll('.main-markets__block');
+const expandSelector = document.querySelectorAll('.expand');
+const mainMarketsExpanded = document.querySelectorAll('.main-markets-expanded');
+const mainMarketsBlockContent = document.querySelectorAll('.main-markets__block__content');
+
+function hideMarkets() {
+    mainMarketsExpanded.forEach((mainMarketElem) => {
+        mainMarketElem.style.display = 'none';
+    })
+}
+
+mainMarketsBlock.forEach((element) => {
+    element.addEventListener("click", function() {
+        let dataMarkets = element.getAttribute('data-markets');
+        let classToToggle = ".main-markets-expanded." + dataMarkets;
+        hideMarkets();
+
+        document.querySelectorAll('.main-markets__block').forEach((item) => {
+            item.classList.add("main-markets__block-expanded");
+            item.classList.toggle("main-markets__block");
+        })
+
+        mainMarketsBlockContent.forEach((item) => {
+            item.style.minHeight = "45px";
+        })
+
+        expandSelector.forEach((item) => {
+            item.style.display = "none";
+        })
+
+        document.querySelectorAll('.expand-less').forEach((expandLess) => {
+            expandLess.addEventListener("click", function() {
+                
+                expandSelector.forEach((expand) => {
+                    expand.style.display = "flex";
+                })
+
+                document.querySelectorAll('.main-markets__block-expanded').forEach((item) => {
+                    item.classList.remove("main-markets__block-expanded");
+                    item.classList.toggle("main-markets__block");
+                })
+
+                mainMarketsBlockContent.forEach((item) => {
+                    item.style.minHeight = "250px";
+                })
+
+                hideMarkets();
+            })
+        })
+        
+        document.querySelector(classToToggle).style.display = "block";
+    })
+})
 
 //....Finish....
 

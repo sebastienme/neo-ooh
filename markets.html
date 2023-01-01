@@ -32,7 +32,7 @@
                         <a class="menu__link__title" href="">Networks</a>
                         <div class="menu__link__dropdown full-block"></div>
                         <ul class="menu__link__dropdown link-js">
-                            <li class="dropdown__elements" data-network="shopping"><a href="">Shopping Mall</a></li>
+                            <li class="dropdown__elements" data-network="shopping"><a href="networks.html">Shopping Mall</a></li>
                             <li class="dropdown__elements" data-network="on-the-go"><a href="">Service Station</a></li>
                             <li class="dropdown__elements" data-network="on-the-go"><a href="">Convenience Store</a></li>
                             <li class="dropdown__elements" data-network="fitness"><a href="">Gym</a></li>
@@ -42,7 +42,7 @@
                     </li>
                     <li class="menu__link"><a class="menu__link__title" href="">Products</a></li>
                     <li class="menu__link"><a class="menu__link__title" href="">Partners</a></li>
-                    <li class="menu__link"><a class="menu__link__title" href="">Markets</a></li>
+                    <li class="menu__link"><a class="menu__link__title" href="markets.html">Markets</a></li>
                     <li class="menu__link"><a class="menu__link__title" href="">Advertisers</a></li>
                 </ul>
                 <div class="navbar__search">
@@ -78,64 +78,72 @@
     
     <main>
         <section class="main-markets">
-            <div class="main-markets__block">
-                <div class="main-markets__block__content">
-                    <div class="main-markets__block__content__title">
-                        <span class="material-symbols-outlined">
-                            pin_drop
-                            </span>
-                        <h4>Quebec</h4>
+            <div class="main-markets__block" data-markets="quebec">
+                <a href="#quebec">
+                    <div class="main-markets__block__content">
+                        <div class="main-markets__block__content__title">
+                            <span class="material-symbols-outlined">
+                                pin_drop
+                                </span>
+                            <h4 id="quebec">Quebec</h4>
+                        </div>
+                        <div class="expand">
+                            <div>Expand</div>
+                            <span class="material-symbols-outlined">expand_more</span>
+                        </div>
                     </div>
-                    <div id="expand">
-                        <div>Expand</div>
-                        <span class="material-symbols-outlined">expand_more</span>
-                    </div>
-                </div>
+                </a>
             </div>
-            <div class="main-markets__block">
-                <div class="main-markets__block__content">
-                    <div class="main-markets__block__content__title">
-                        <span class="material-symbols-outlined">pin_drop</span>
-                        <h4>Ontario</h4>
+            <div class="main-markets__block" data-markets="ontario">
+                <a href="#ontario">
+                    <div class="main-markets__block__content">
+                        <div class="main-markets__block__content__title">
+                            <span class="material-symbols-outlined">pin_drop</span>
+                            <h4 id="ontario">Ontario</h4>
+                        </div>
+                        <div class="expand">
+                            <div>Expand</div>
+                            <span class="material-symbols-outlined">expand_more</span>
+                        </div>
                     </div>
-                    <div id="expand">
-                        <div>Expand</div>
-                        <span class="material-symbols-outlined">expand_more</span>
-                    </div>
-                </div>
+                </a>
             </div>
-            <div class="main-markets__block">
-                <div class="main-markets__block__content">
-                    <div class="main-markets__block__content__title">
-                        <span class="material-symbols-outlined">pin_drop</span>
-                        <h4>East</h4>
+            <div class="main-markets__block" data-markets="east">
+                <a href="#east">
+                    <div class="main-markets__block__content">
+                        <div class="main-markets__block__content__title">
+                            <span class="material-symbols-outlined">pin_drop</span>
+                            <h4 id="east">East</h4>
+                        </div>
+                        <div class="expand">
+                            <div>Expand</div>
+                            <span class="material-symbols-outlined">expand_more</span>
+                        </div>
                     </div>
-                    <div id="expand">
-                        <div>Expand</div>
-                        <span class="material-symbols-outlined">expand_more</span>
-                    </div>
-                </div>
+                </a>
             </div>
-            <div class="main-markets__block">
-                <div class="main-markets__block__content">
-                    <div class="main-markets__block__content__title">
-                        <span class="material-symbols-outlined">pin_drop</span>
-                        <h4>West</h4>
+            <div class="main-markets__block" data-markets="west">
+                <a href="#west">
+                    <div class="main-markets__block__content">
+                        <div class="main-markets__block__content__title">
+                            <span class="material-symbols-outlined">pin_drop</span>
+                            <h4 id="west">West</h4>
+                        </div>
+                        <div class="expand">
+                            <div>Expand</div>
+                            <span class="material-symbols-outlined">expand_more</span>
+                        </div>
                     </div>
-                    <div id="expand">
-                        <div>Expand</div>
-                        <span class="material-symbols-outlined">expand_more</span>
-                    </div>
-                </div>
+                </a>
             </div>
         </section>
-        <section class="main-markets-expanded">
+        <section class="main-markets-expanded quebec">
             <div class="main-markets-expanded__title"><h3>Quebec</h3></div>
             <div class="main-markets-expanded__markets">
                 <div class="main-markets-expanded__markets__content">
                     <span class="material-symbols-outlined">pin_drop</span>
                     <div class="markets__content__block">
-                        <h5>Greater Montreal</h5>
+                        <h5><a href="markets-regions.html">Greater Montreal</a></h5>
                         <div class="content__details">
                             <ul>
                                 <li>Mapping</li>
@@ -237,7 +245,229 @@
                     </div>
                 </div>
             </div>
-            <div class="main-markets-expanded__closing">
+            <div class="expand-less">
+                <div>Close</div>
+                <span class="material-symbols-outlined">expand_less</span>
+            </div>
+        </section>
+        <section class="main-markets-expanded ontario">
+            <div class="main-markets-expanded__title"><h3>Ontario</h3></div>
+            <div class="main-markets-expanded__markets">
+                <div class="main-markets-expanded__markets__content">
+                    <span class="material-symbols-outlined">pin_drop</span>
+                    <div class="markets__content__block">
+                        <h5>Greater Toronto</h5>
+                        <div class="content__details">
+                            <ul>
+                                <li>Mapping</li>
+                                <li>Galery</li>
+                                <li>List</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-markets-expanded__markets__content">
+                    <span class="material-symbols-outlined">pin_drop</span>
+                    <div class="markets__content__block">
+                        <h5>Ottawa</h5>
+                        <div class="content__details">
+                            <ul>
+                                <li>Mapping</li>
+                                <li>Galery</li>
+                                <li>List</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-markets-expanded__markets__content">
+                    <span class="material-symbols-outlined">pin_drop</span>
+                    <div class="markets__content__block">
+                        <h5>Kingston-Belleville</h5>
+                        <div class="content__details">
+                            <ul>
+                                <li>Mapping</li>
+                                <li>Galery</li>
+                                <li>List</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-markets-expanded__markets__content">
+                    <span class="material-symbols-outlined">pin_drop</span>
+                    <div class="markets__content__block">
+                        <h5>South-Western Ontario</h5>
+                        <div class="content__details">
+                            <ul>
+                                <li>Mapping</li>
+                                <li>Galery</li>
+                                <li>List</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-markets-expanded__markets__content">
+                    <span class="material-symbols-outlined">pin_drop</span>
+                    <div class="markets__content__block">
+                        <h5>South-Central Ontario</h5>
+                        <div class="content__details">
+                            <ul>
+                                <li>Mapping</li>
+                                <li>Galery</li>
+                                <li>List</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-markets-expanded__markets__content">
+                    <span class="material-symbols-outlined">pin_drop</span>
+                    <div class="markets__content__block">
+                        <h5>South-Eastern Ontario</h5>
+                        <div class="content__details">
+                            <ul>
+                                <li>Mapping</li>
+                                <li>Galery</li>
+                                <li>List</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-markets-expanded__markets__content">
+                    <span class="material-symbols-outlined">pin_drop</span>
+                    <div class="markets__content__block">
+                        <h5>Eastern Ontario</h5>
+                        <div class="content__details">
+                            <ul>
+                                <li>Mapping</li>
+                                <li>Galery</li>
+                                <li>List</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-markets-expanded__markets__content">
+                    <span class="material-symbols-outlined">pin_drop</span>
+                    <div class="markets__content__block">
+                        <h5>North-Western Ontario</h5>
+                        <div class="content__details">
+                            <ul>
+                                <li>Mapping</li>
+                                <li>Galery</li>
+                                <li>List</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="expand-less">
+                <div>Close</div>
+                <span class="material-symbols-outlined">expand_less</span>
+            </div>
+        </section>
+        <section class="main-markets-expanded east">
+            <div class="main-markets-expanded__title"><h3>East</h3></div>
+            <div class="main-markets-expanded__markets">
+                <div class="main-markets-expanded__markets__content">
+                    <span class="material-symbols-outlined">pin_drop</span>
+                    <div class="markets__content__block">
+                        <h5>New-Brunswick</h5>
+                        <div class="content__details">
+                            <ul>
+                                <li>Mapping</li>
+                                <li>Galery</li>
+                                <li>List</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-markets-expanded__markets__content">
+                    <span class="material-symbols-outlined">pin_drop</span>
+                    <div class="markets__content__block">
+                        <h5>Halifax</h5>
+                        <div class="content__details">
+                            <ul>
+                                <li>Mapping</li>
+                                <li>Galery</li>
+                                <li>List</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="expand-less">
+                <div>Close</div>
+                <span class="material-symbols-outlined">expand_less</span>
+            </div>
+        </section>
+        <section class="main-markets-expanded west">
+            <div class="main-markets-expanded__title"><h3>West</h3></div>
+            <div class="main-markets-expanded__markets">
+                <div class="main-markets-expanded__markets__content">
+                    <span class="material-symbols-outlined">pin_drop</span>
+                    <div class="markets__content__block">
+                        <h5>Greater Vancouver</h5>
+                        <div class="content__details">
+                            <ul>
+                                <li>Mapping</li>
+                                <li>Galery</li>
+                                <li>List</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-markets-expanded__markets__content">
+                    <span class="material-symbols-outlined">pin_drop</span>
+                    <div class="markets__content__block">
+                        <h5>Calgary Region</h5>
+                        <div class="content__details">
+                            <ul>
+                                <li>Mapping</li>
+                                <li>Galery</li>
+                                <li>List</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-markets-expanded__markets__content">
+                    <span class="material-symbols-outlined">pin_drop</span>
+                    <div class="markets__content__block">
+                        <h5>Edmonton Region</h5>
+                        <div class="content__details">
+                            <ul>
+                                <li>Mapping</li>
+                                <li>Galery</li>
+                                <li>List</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-markets-expanded__markets__content">
+                    <span class="material-symbols-outlined">pin_drop</span>
+                    <div class="markets__content__block">
+                        <h5>Winnipeg Region</h5>
+                        <div class="content__details">
+                            <ul>
+                                <li>Mapping</li>
+                                <li>Galery</li>
+                                <li>List</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-markets-expanded__markets__content">
+                    <span class="material-symbols-outlined">pin_drop</span>
+                    <div class="markets__content__block">
+                        <h5>Regina Region</h5>
+                        <div class="content__details">
+                            <ul>
+                                <li>Mapping</li>
+                                <li>Galery</li>
+                                <li>List</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="expand-less">
                 <div>Close</div>
                 <span class="material-symbols-outlined">expand_less</span>
             </div>
