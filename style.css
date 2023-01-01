@@ -815,6 +815,7 @@ address {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 2px;
 
     border-left: 1px solid var(--light-color);
     max-height: 90px;
@@ -838,8 +839,7 @@ address {
     text-align: center;
 
     font-size: var(--small-text);
-
-    
+    line-height: 1;
 }
 
 /*<---end of markets-regions.html---> */
