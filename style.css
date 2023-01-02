@@ -842,8 +842,142 @@ address {
     line-height: 1;
 }
 
-/*<---end of markets-regions.html---> */
+.carousel {
+    color: var(--dark-color);
+}
 
+.carousel__top {
+    display: flex;
+    justify-content: center;
+
+    margin: 6rem 0 2rem 0;
+
+    width: 100vw;
+}
+
+.carousel__top__return {
+    display: flex;
+    position: absolute;
+    gap: 5px;
+    left: 20px;
+
+    font-size: var(--small-text);
+}
+
+.carousel__top__option-display {
+    display: flex;
+}
+
+.carousel__top__option-display__link {
+    padding: 0 10px;
+}
+
+.carousel__top__option-display__link.border {
+    border-left: 1px solid var(--dark-color);
+}
+
+.carousel__mid__item-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100vw;
+}
+
+.carousel__mid__item-1 img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel__mid__item-1__image-cards {
+    border: 1px solid var(--light-color);
+    line-height: 0;
+    
+    position: relative;
+}
+
+.carousel__mid__item-1__image-cards:hover::after {
+    content: attr(data-property);
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: var(--light-color);
+    font-size: var(--h5-text);
+    
+    
+    z-index: 999;
+}
+
+.carousel__mid__item-1__image-cards img:hover {
+    opacity: 50%;
+}
+
+.carousel__bottom__page-number {
+    display: flex;
+    gap: 15px;
+    
+    padding: 20px 0 50px 35px;
+
+    font-size: var(--small-text);
+    line-height: 1;
+
+    min-height: 100px;
+}
+
+.carousel__bottom__page-number > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 2rem;
+    line-height: 1;
+}
+
+.carousel__bottom__page-number > li:hover {
+    border: 1px solid var(--dark-color);
+}
+
+.carousel__bottom__page-number a {
+    width: 100%;
+    
+    text-align: center;
+}
+
+
+/*start hover link CSS*/
+.carousel__top__option-display__link {
+    position: relative;
+}
+
+.carousel__top__option-display__link::after {
+    position: absolute;
+    content: '';
+    display: block;
+
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+
+    background-color: var(--dark-color);
+
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.carousel__top__return a:hover::after {
+    width: 100%; 
+    left: 0; 
+}
+
+.carousel__top__option-display__link:hover::after {
+    width: 50%;
+    left: 25%;
+}
+/*end hover link CSS*/
+
+/*<---end of markets-regions.html---> */
 
 @media only screen and (max-width: 1700px) {
     .hero, .hero-sub {

@@ -53,9 +53,7 @@ const mainMarketsExpanded = document.querySelectorAll('.main-markets-expanded');
 const mainMarketsBlockContent = document.querySelectorAll('.main-markets__block__content');
 
 function hideMarkets() {
-    mainMarketsExpanded.forEach((mainMarketElem) => {
-        mainMarketElem.style.display = 'none';
-    })
+    mainMarketsExpanded.forEach(mainMarketElem => mainMarketElem.style.display = 'none');
 }
 
 mainMarketsBlock.forEach((element) => {
@@ -69,29 +67,21 @@ mainMarketsBlock.forEach((element) => {
             item.classList.toggle("main-markets__block");
         })
 
-        mainMarketsBlockContent.forEach((item) => {
-            item.style.minHeight = "45px";
-        })
+        mainMarketsBlockContent.forEach(item => item.style.minHeight = "45px")
 
-        expandSelector.forEach((item) => {
-            item.style.display = "none";
-        })
+        expandSelector.forEach((item) => item.style.display = "none");
 
         document.querySelectorAll('.expand-less').forEach((expandLess) => {
             expandLess.addEventListener("click", function() {
                 
-                expandSelector.forEach((expand) => {
-                    expand.style.display = "flex";
-                })
+                expandSelector.forEach(expand => expand.style.display = "flex");
 
                 document.querySelectorAll('.main-markets__block-expanded').forEach((item) => {
                     item.classList.remove("main-markets__block-expanded");
                     item.classList.toggle("main-markets__block");
                 })
 
-                mainMarketsBlockContent.forEach((item) => {
-                    item.style.minHeight = "250px";
-                })
+                mainMarketsBlockContent.forEach(item => item.style.minHeight = "250px");
 
                 hideMarkets();
             })
@@ -103,4 +93,39 @@ mainMarketsBlock.forEach((element) => {
 
 //....Finish....
 
+//....Start....
+//Function that change the color of the hover effect in regions gallery depending on
+//the date-network attribute
+const galleryImage = document.querySelectorAll('.carousel__mid__item-1__image-cards > img');
+const galleryImageDiv = document.querySelectorAll('.carousel__mid__item-1__image-cards');
+const propertyDisplay = document.querySelectorAll('.image-cards__property-display');
+
+galleryImage.forEach((element) => {
+    element.addEventListener("mouseenter", function() {
+        const dataNetwork = element.getAttribute('data-network');
+        const dataProperty = element.getAttribute('data-property');
+        
+        galleryImageDiv.forEach((item) => {
+            switch (dataNetwork) {
+                case "shopping":
+                    item.style.backgroundColor = "var(--shopping-color)";
+                    break;
+                case "on-the-go":
+                    item.style.backgroundColor = "var(--otg-color)";
+                    break;
+                case "fitness":
+                    item.style.backgroundColor = "var(--fitness-color)";
+                    break;
+            }
+
+        })
+
+/*         propertyDisplay.forEach((item) => {
+            item.innerHTML = `${dataProperty}`;
+            item.style.display = "block"
+        }) */
+
+    })
+})
+//....Finish....
 
