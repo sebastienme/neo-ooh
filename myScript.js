@@ -331,3 +331,9 @@ function colorHoverImages() {
     })
 };
 //....Finish....
+
+function openMap() {
+    const contactUsMap = document.querySelector('.contact-us-map');
+    contactUsMap.classList.toggle("show")
+
+}

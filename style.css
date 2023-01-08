@@ -48,6 +48,10 @@ a {
     scroll-margin-block-start: 2em;
 }
 
+button {
+    cursor: pointer;
+}
+
 p {margin-bottom: 1rem;}
 
 h1, h2, h3, h4, h5 {
@@ -73,7 +77,7 @@ h5 {font-size: var(--h5-text);}
 
 .material-symbols-outlined {
     font-variation-settings:
-    'FILL' 0,
+    'FILL' 1,
     'wght' 300,
     'GRAD' 200,
     'opsz' 48
@@ -1094,6 +1098,205 @@ address {
 /*end hover link CSS*/
 
 /*<---end of markets-regions.html---> */
+
+/*<---start of contact.html---> */
+.contact {
+    background-color: var(--neo-color);
+}
+
+.header-contact {
+    background: none;
+}
+
+.header-contact__hero__content {
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+
+    background-color: var(--light-color);
+
+    min-height: calc((100vh - var(--bottom-menu-height) - var(--top-menu-height))*0.3);
+}
+
+.header-contact__hero__content__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero__content__items__title {
+    color: var(--dark-color);
+    font-weight: 700;
+    text-transform: uppercase;
+
+    line-height: 1.25;
+}
+
+.hero__content__items__sub-title > a {
+    color: var(--dark-light-color);
+    font-size: var(--small-text);
+}
+
+.header-contact__hero__image {
+    background: url(images/montreal-midnight.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    min-height: calc((100vh - var(--bottom-menu-height) - var(--top-menu-height))*0.7);
+}
+
+.contact-us-container {
+    display: flex;
+    justify-content: space-between;
+
+    background-color: var(--light-color);
+
+    min-height: 11rem;
+}
+
+.contact-us-container__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-left: 100px;
+
+    line-height: 1.5;
+}
+
+.contact-us-container__left__title {
+    color: var(--dark-color);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.contact-us-container__left__adress {
+    font-size: var(--small-text);
+    color: var(--dark-light-color);
+}
+
+.contact-us-container__left__phone-email {
+    display: flex;
+    gap: 15px;
+
+    font-size: var(--small-text);
+    font-weight: 500;
+    color: var(--dark-color);
+}
+
+.contact-us-container__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-right: 100px;
+}
+
+.contact-us-container__right > button {
+    background-color: transparent;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    border: 2px solid var(--dark-color);
+    padding: 8px 25px 8px 25px;
+}
+
+.contact-us-map {
+    position: absolute;
+    opacity: 0;
+    z-index: -10;
+}
+
+.contact-us-map.show {
+    position: static;
+    opacity: 1;
+    z-index: 1;
+}
+
+.contact-us-form__title {
+    padding: 75px 0 75px 50px;
+}
+
+.contact-us-form__container {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 50px 50px 50px 50px;
+
+    border: 1px solid var(--light-color);
+}
+
+.contact-us-form__container__description > p {
+    line-height: 1.25;
+}
+
+#form-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#form-1 label {
+    font-size: var(--small-text);
+}
+
+#first_name, #last_name, #email, #form-1 textarea {
+    font-size: 1rem;
+
+    border: 1px solid var(--light-color);
+    border-radius: 5px;
+
+    background-color: transparent;
+    color: var(--light-color);
+
+    padding: 8px 0 8px 22px;
+
+    width: 350px;
+}
+
+#comment {
+    min-height: 150px;   
+}
+
+#form-1 .form-1__checkbox {
+    display: flex;
+}
+
+.contact-us-form__container__form > button {
+    color: var(--neo-color);
+    font-size: var(--h5-text);
+
+    background-color: var(--light-color);
+    border: none;
+
+    margin-top: 50px;
+    padding: 10px 25px 10px 25px;
+}
+
+.contact-us-container.bottom {
+    background-color: var(--neo-color);
+}
+
+.contact-us-container__left.bottom {
+    margin-left: 200px;
+}
+
+.contact-us-container__right.bottom {
+    margin-right: 200px;
+}
+
+.contact-us-container__left__title.bottom,
+.contact-us-container__left__adress.bottom,
+.contact-us-container__left__phone-email.bottom  {
+    color: var(--light-color)
+}
+
+/*<---end of contact.html---> */
 
 @media only screen and (max-width: 1700px) {
     .hero, .hero-sub {

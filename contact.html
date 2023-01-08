@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neo Réseaux d'Affichage</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header class="scroll-slide">
+<body class="contact">
+    <header class="header-contact">
         <menu class="top-menu">
             <div class="top-menu__language-toggle">
                 <a href="">FR</a>
@@ -20,7 +20,7 @@
             <ul class="top-menu right">
                 <li class="top-menu__nav about-us"><a class="top-menu__title" href="">About Us</a></li>
                 <li class="top-menu__nav login"><a class="top-menu__title" href="">Login</a></li>
-                <li class="top-menu__nav contact-us"><a href="">Contact US</a></li>
+                <li class="top-menu__nav contact-us"><a href="contact.html">Contact US</a></li>
             </ul>    
         </menu>
         <menu class="bottom-menu">
@@ -46,17 +46,90 @@
                 </ul>
                 <div class="navbar__search">
                     <span class="material-symbols-outlined">search</span>
-                    <span><form method="GET" action="" role="search" id="search-form">
-                <input required="" name="" placeholder="Search" id="search-input" spellcheck="false" dir="auto" type="text">
-                <button class="search-btn" type="submit"></button>
-                    </form>
+                    <span>
+                        <form method="GET" action="" role="search" id="search-form">
+                            <input required="" name="" placeholder="Search" id="search-input" spellcheck="false" dir="auto" type="text">
+                            <button class="search-btn" type="submit"></button>
+                        </form>
                     </span>
-                  </div>
+                </div>
             </div>
         </menu>
+        <div class="header-contact__hero">
+            <div class="header-contact__hero__content">
+                <div class="header-contact__hero__content__items">
+                    <div class="hero__content__items__title">Advertising<br>sales</div>
+                    <div class="hero__content__items__sub-title"><a href = "mailto: sales@neo-ooh.com">sales@neo-ooh.com</a></div>
+                </div>
+                <div class="header-contact__hero__content__items">
+                    <div class="hero__content__items__title">Production<br>material</div>
+                    <div class="hero__content__items__sub-title"><a href = "mailto: production@neo-ooh.com">production@neo-ooh.com</a></div>
+                </div>
+                <div class="header-contact__hero__content__items">
+                    <div class="hero__content__items__title">Maintenance<br>or service</div>
+                    <div class="hero__content__items__sub-title"><a href = "mailto: operations@neo-ooh.com">operations@neo-ooh.com</a></div>
+                </div>
+                <div class="header-contact__hero__content__items">
+                    <div class="hero__content__items__title">Digital products<br>support</div>
+                    <div class="hero__content__items__sub-title"><a href = "mailto: mallsupport@neo-ooh.com">mallsupport@neo-ooh.com</a></div>
+                </div>
+                <div class="header-contact__hero__content__items">
+                    <div class="hero__content__items__title">Career<br>opportunities</div>
+                    <div class="hero__content__items__sub-title"><a href = "mailto: hr@neo-ooh.com">hr@neo-ooh.com</a></div>
+                </div>
+            </div>
+            <div class="header-contact__hero__image"></div>
+        </div>
     </header>
-
-    
+    <main>
+        <section class="contact-us-container">
+            <div class="contact-us-container__left">
+                <div class="contact-us-container__left__title">Contact Us</div>
+                <div class="contact-us-container__left__adress">3700 rue St-Patrick, #318, Montréal, (Québec), H4E 1A2</div>
+                <div class="contact-us-container__left__phone-email">
+                    <div class="contact-us-container__left__phone-email__phone">1 (514) 788-6111</div>
+                    <div class="contact-us-container__left__phone-email__email">info@neo-ooh.com</div>
+                </div>
+            </div>
+            <div class="contact-us-container__right"><button onclick="openMap()" class="btn-map">MAP</button></div>
+        </section>
+        <section class="contact-us-map">
+            <iframe width="100%" height="600px" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/search?q=Neo-Traffic%20inc.%2C%20Saint-Patrick%20Street%2C%20Montreal%2C%20QC%2C%20Canada&key=AIzaSyBDI5Zx29YKi54Qbtqd34YUkaKYkFRzXyg"></iframe>
+        </section>
+        <section class="contact-us-form">
+            <div class="contact-us-form__title"><h1>contact us</h1></div>
+            <div class="contact-us-form__container">
+                <div class="contact-us-form__container__description">
+                    <p>Leave us your details and a member of our team
+                        will get back to you as soon as possible</p>
+                </div>
+                <div class="contact-us-form__container__form">
+                    <form id="form-1" action="http://httpbin.org/post" method="post">
+                        <label for="first_name">First name*<br><input type="text" id="first_name" name="first_name" value="" required></label>
+                        <label for="last_name">Last name*<br><input type="text" id="last_name" name="last_name" required></label>
+                        <label for="email">Email Address*<br><input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></label>
+                        <label for="comment">Comment*<br><textarea name="comment" id="comment" form="form-1" required></textarea></label>
+                    </form>
+                    <button type="submit" form="form-1">Submit</button>
+                </div>
+            </div>
+        </section>
+        <section class="contact-us-container bottom">
+            <div class="contact-us-container__left bottom">
+                <div class="contact-us-container__left__title bottom">Contact Us</div>
+                <div class="contact-us-container__left__adress bottom">3700 rue St-Patrick, #318, Montréal, (Québec), H4E 1A2</div>
+                <div class="contact-us-container__left__phone-email bottom">
+                    <div class="contact-us-container__left__phone-email__phone">1 (514) 788-6111</div>
+                    <div class="contact-us-container__left__phone-email__email">info@neo-ooh.com</div>
+                </div>
+            </div>
+            <div class="contact-us-container__right bottom">                
+                <ul>
+                    <li><a href="https://www.linkedin.com/company/neo-ooh/" target="_blank"><img class="linkedin-icon" src="images/icons8-linkedin-48 (1).png" alt="linkedin logo"></a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
     <footer>
         <div class="footer-top-menu">
             <ul class="footer-top-menu__list">
