@@ -918,6 +918,10 @@ address {
     opacity: 50%;
 }
 
+.carousel__bottom {
+    min-height: 100px;
+}
+
 .carousel__bottom__page-number {
     display: flex;
     gap: 15px;
@@ -963,6 +967,101 @@ address {
     z-index: 1;
 }
 
+.sales-contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    border-top: 1px solid var(--dark-color);
+
+    min-height: 12rem;
+}
+
+.sales-contact__left {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.sales-contact__left__photo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sales-contact__left__photo > img {
+    width: 100px;
+    height: auto;
+}
+
+.sales-contact__left__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.sales-contact__left__details__title {
+    display: flex;
+    gap: 10px;
+
+    color: var(--dark-color);
+    font-weight: 500;
+}
+
+.sales-contact__left__details__sub-title {
+    display: flex;
+    flex-direction: column;
+
+    line-height: 1.25;
+}
+
+.sales-contact__left__details__sub-title__poste, .sales-contact__right__details__sub-title__adress {
+    font-size: var(--small-text);
+    color: var(--dark-light-color);
+}
+
+.sales-contact__left__details__sub-title__phone, .sales-contact__right__details__sub-title__phone {
+    font-weight: 500;
+    font-size: var(--small-text);
+    color: var(--shopping-color);
+}
+
+.sales-contact__right {
+    display: flex;
+    gap: 30px;
+
+    padding-left: 60px;
+
+    border-left: 1px solid var(--dark-color);
+}
+
+.sales-contact__right__icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sales-contact__right__icon > span {
+    color: var(--dark-color);
+    font-size: var(--h1-text);
+}
+
+.sales-contact__right__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.sales-contact__right__details__title {
+    color: var(--dark-color);
+    font-size: var(--h5-text);
+    font-weight: 700;
+}
+
+.sales-contact__right__details__sub-title {
+    line-height: 1.25;
+}
 /*start hover link CSS*/
 .carousel__top__option-display__link {
     position: relative;

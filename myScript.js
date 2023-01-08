@@ -304,8 +304,6 @@ function hideMap() {
 }
 
 
-
-
 //Function that change the color of the hover effect in regions gallery depending on
 //the date-network attribute
 function colorHoverImages() {
