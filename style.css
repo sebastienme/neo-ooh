@@ -1433,7 +1433,6 @@ address {
     flex-grow: 2;
 
     min-height: calc(50vh - var(--bottom-menu-height) - var(--top-menu-height));
-
 }
 
 .hero-news__title > h1 {
@@ -1482,7 +1481,7 @@ address {
     font-size: var(--small-text);  
 }
 
-.header-news__top__content__details > button {
+.read-more {
     background-color: var(--neo-color);
     color: var(--light-color);
 
@@ -1565,6 +1564,122 @@ address {
 }
 
 /*<---end of news.html---> */
+
+/*<---start of press-release.html---> */
+.header-pr {
+    background: none;
+    background-color: var(--neo-color);
+
+    min-height: auto;
+}
+
+.hero-pr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    min-height: calc(50vh - var(--bottom-menu-height) - var(--top-menu-height));
+}
+
+.hero-pr__title > h1 {
+    font-size: var(--gigantic-text);
+    padding-left: 200px;
+
+    margin: 0;
+}
+
+.main-pr {
+    background-color: var(--light-color);
+    color: var(--neo-color);
+
+    padding-left: 200px;
+}
+
+.main-pr__title {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.main-pr__title > h2 {
+    margin: 0;
+}
+
+.main-pr__date {
+    font-size: var(--h5-text);
+    font-weight: 700;
+
+    margin-bottom: 2rem;
+}
+
+.bold-text {
+    font-weight: 700;
+}
+
+.main-pr__texts__quote {
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    left: 100px;
+
+    max-width: 900px;
+}
+
+.main-pr__texts__quote__bracket {
+    display: flex;
+}
+
+.main-pr__texts__quote__bracket.end {
+    justify-content: flex-end;
+}
+
+.main-pr__texts__quote__text {
+    font-style: italic;
+    font-size: var(--h5-text);
+
+    padding-left: 100px;
+    margin-bottom: 0;
+
+    max-width: 800px;
+}
+
+.big-text {
+    font-size: var(--gigantic-text);
+    height: 50px;
+
+    line-height: 1.5;
+}
+
+.big-text.end {
+    line-height: 1;
+    
+}
+
+.main-pr__about {
+    font-weight: 700;
+
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.main-pr__photo {
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.main-pr__return {
+    display: flex;
+    gap: 8px;
+
+    line-height: 1.25;
+    margin-bottom: 7rem;
+}
+
+/*<---end of press-release.html---> */
 
 @media only screen and (max-width: 1700px) {
     .hero, .hero-sub {
