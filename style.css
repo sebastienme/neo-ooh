@@ -1497,6 +1497,73 @@ address {
     object-fit: cover;
 }
 
+.main-news {
+    background-color: var(--neo-color);
+}
+
+#main-news {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    
+    gap: 10px;
+    row-gap: 3rem;
+
+
+    padding-left: 200px;
+    padding-right: 100px;
+}
+
+.main-news__title {
+    padding: 150px 0 150px 200px;
+}
+
+.main-news__title > h1 {
+    margin: 0;
+}
+
+.main-news__cards {
+    max-width: 300px;
+}
+
+.main-news__cards__photo > img {
+    width: 300px;
+    height: 225px;
+    object-fit: cover;
+}
+
+.main-news__cards__title {
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+.main-news__cards__sub-title {
+    font-size: var(--small-text);
+    font-weight: 600;
+
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    line-height: 1;
+}
+
+.main-news__cards__detail > p {
+    font-size: var(--small-text);
+    margin-bottom: 2rem;
+}
+
+.main-news__cards__read-more > a {
+    font-size: var(--small-text);
+    font-weight: 600;
+}
+
+.main-news__cards__read-more {
+    display: flex;
+    gap: 5px;
+
+    padding-bottom: 1rem;
+
+    border-bottom: 1px solid var(--light-color);
+}
+
 /*<---end of news.html---> */
 
 @media only screen and (max-width: 1700px) {
