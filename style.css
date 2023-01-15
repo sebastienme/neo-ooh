@@ -1298,6 +1298,120 @@ address {
 
 /*<---end of contact.html---> */
 
+/*<---start of advertisers.html---> */
+
+.header-advertisers {
+    background: none;
+    background-color: var(--neo-color);
+}
+
+.hero-advertisers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+    min-height: calc(50vh - var(--bottom-menu-height) - var(--top-menu-height));
+}
+
+.hero-advertisers {
+    padding-left: 100px;
+}
+
+.hero-advertisers__map {
+    background-color: var(--light-color);
+}
+
+.hero-advertisers__title > h1 {
+    font-size: var(--gigantic-text);
+}
+
+.main-advertisers__containter-main {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+
+.main-advertisers__containter-main__top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
+
+    padding-left: 100px;
+    padding-top: 50px;
+
+    min-height: 75vh;
+}
+
+.prompt {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.main-advertisers__containter-main__top__titles {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    padding-right: 300px;
+}
+
+.main-title > h1 {
+    font-size: var(--jumbo-text);
+}
+
+.main-advertisers__containter-main__top__titles .sub-title {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.main-advertisers__containter-main__bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+    padding: 50px 0 0 100px;
+
+    min-height: 600px;
+}
+
+.sub-statistics {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.sub-statistics__content {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    width: 400px;
+}
+
+.sub-statistics__content__title > h1 {
+    font-size: var(--gigantic-text);
+}
+
+.sub-statistics__content__texts {
+    display: flex;
+    justify-content: center;
+   
+}
+
+.sub-statistics__content__texts > p {
+    font-size: 1rem;
+    line-height: 1.5;
+    width: 250px;
+}
+
+.sub-statistics__content__texts span {
+    font-weight: 700;
+}
+
+/*<---end of advertisers.html---> */
+
 @media only screen and (max-width: 1700px) {
     .hero, .hero-sub {
         padding-left: 200px;
