@@ -1681,6 +1681,111 @@ address {
 
 /*<---end of press-release.html---> */
 
+/*<---start of specs.html---> */
+.header-specs {
+    background: none;
+    background-color: var(--neo-color);
+}
+
+.hero-specs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--light-color);
+    color: var(--dark-color);
+
+    min-height: calc(100vh - var(--bottom-menu-height) - var(--top-menu-height));
+}
+
+.hero-specs__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-specs__title > h5 {
+    font-weight: 300;
+
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+}
+
+.divider {
+    border-top: 1px solid var(--dark-color);
+    width: 100px;
+}
+
+.hero-specs__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+
+    padding-top: 8rem;
+}
+
+.hero-specs__cards__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-width: 250px;
+    min-height: 400px;
+}
+
+.hero-specs__cards__container__type__tile {
+    display: flex;
+    justify-content: center;
+
+    border: 1px solid var(--dark-color);
+
+    text-transform: uppercase;
+    font-weight: 600;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    width: 175px;
+}
+
+.hero-specs__cards__container__details {
+    margin-top: 6rem;
+}
+
+.hero-specs__cards__container__details__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-weight: 500;
+}
+
+.hero-specs__cards__container__download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: auto;
+}
+
+.hero-specs__cards__container__download > span {
+    padding-bottom: 5px;
+}
+
+.hero-specs__cards__container__download > div {
+    font-size: var(--smaller-text);
+    
+    border-top: 1px solid var(--dark-color);
+    
+    line-height: 1;
+    text-align: center;
+    padding-top: 5px;
+
+    min-width: 75px;
+}
+
+/*<---end of specs.html---> */
+
 @media only screen and (max-width: 1700px) {
     .hero, .hero-sub {
         padding-left: 200px;
