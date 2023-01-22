@@ -1432,7 +1432,7 @@ address {
     justify-content: center;
     flex-grow: 2;
 
-    min-height: calc(50vh - var(--bottom-menu-height) - var(--top-menu-height));
+    min-height: calc(45vh - var(--bottom-menu-height) - var(--top-menu-height));
 }
 
 .hero-news__title > h1 {
@@ -1982,6 +1982,89 @@ address {
 }
 
 /*<---end of specs.html---> */
+
+/*<---start of about-us.html---> */
+.header-about-us {
+    background: none;
+    background-color: var(--neo-color);
+}
+
+.hero-about-us {
+    min-height: calc(100vh - var(--bottom-menu-height) - var(--top-menu-height));
+    background-color: var(--light-color);
+}
+
+.hero-about-us__title,
+.about-us__history__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 2;
+
+    background-color: var(--neo-color);
+
+    min-height: calc(45vh - var(--bottom-menu-height) - var(--top-menu-height));
+}
+
+.hero-about-us__title > h1,
+.about-us__history__title > h1 {
+    font-size: var(--gigantic-text);
+    padding-left: 200px;
+    margin: 0;
+}
+
+.hero-about-us__intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+
+.hero-about-us__intro__text {
+    margin: 80px 25px 0 25px;
+    
+    max-width: 800px;
+}
+
+.hero-about-us__intro__text > p {
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+
+.hero-about-us__intro__menu__list {
+    display: flex;
+    gap: 30px;
+}
+
+.hero-about-us__intro__menu {
+    margin-top: 40px;
+}
+
+.hero-about-us__intro__menu__list button {
+    background-color: var(--light-color);
+    border: 1px solid var(--dark-color);
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 150px;    
+}
+
+.about-us__history {
+    min-height: 100vh;
+}
+
+.about-us__history__sub-title {
+    padding-left: 200px;
+}
+
+.about-us__history__sub-title > h5 {
+    color: var(--neo-color);
+}
+
+/*<---end of about-us.html---> */
 
 @media only screen and (max-width: 1700px) {
     .hero, .hero-sub {

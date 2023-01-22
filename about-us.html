@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neo Réseaux d'Affichage</title>
+    <title>About Us</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
 </head>
-<body>
-    <header class="scroll-slide">
+<body class="about-us">
+    <header class="header-about-us">
         <menu class="top-menu">
             <div class="top-menu__language-toggle">
                 <a href="">FR</a>
@@ -46,39 +47,53 @@
                 </ul>
                 <div class="navbar__search">
                     <span class="material-symbols-outlined">search</span>
-                    <span><form method="GET" action="" role="search" id="search-form">
-                <input required="" name="" placeholder="Search" id="search-input" spellcheck="false" dir="auto" type="text">
-                <button class="search-btn" type="submit"></button>
-                    </form>
+                    <span>
+                        <form method="GET" action="" role="search" id="search-form">
+                            <input required="" name="" placeholder="Search" id="search-input" spellcheck="false" dir="auto" type="text">
+                            <button class="search-btn" type="submit"></button>
+                        </form>
                     </span>
-                  </div>
+                </div>
             </div>
         </menu>
-        <section class="hero">
-            <div class="hero__spacer"></div>
-            <div class="hero__text">
-                <h1>Reaching your Audience with an expanding network in retail, fitness, and daily commute.</h1>
+        <section class="hero-about-us">
+            <div class="hero-about-us__title"><h1>our company</h1></div>
+            <div class="hero-about-us__intro">
+                <div class="hero-about-us__intro__text">
+                    <p>
+                        NEO (neo-ooh.com) is a Canadian advertising network established in 430 sites, 150 municipalities
+                        and has 3,000+ ad displays nationwide in shopping malls, fitness centers, C-stores, and gas stations.
+                    </p>
+                    <p>
+                        NEO’s network consists of digital displays, static posters, spectacular formats, and speciality
+                        products, including technologies allowing us to broadcast advertising campaigns on smart phones,
+                        at the local and national level.
+                    </p>
+                    <p>
+                        NEO is wholly owned by Media Group which also owns Speed-XM (speed-xm.com) and STAFF
+                        (staffpersonnel.com), Eastern Canada’s leading experiential marketing and event staffing agencies.
+                    </p>
+                </div>
+                <div class="hero-about-us__intro__menu">
+                    <ul class="hero-about-us__intro__menu__list">
+                        <li><button>Our Team</button></li>
+                        <li><button>Our Partners</button></li>
+                        <li><button>Our Clients</button></li>
+                        <li><button>News</button></li>
+                    </ul>
+                </div>
             </div>
-            <section class="hero__sub">
-                <span id="sub__trends">Trends in Out-of-Home</span>
-                Growing urbanisation, increasing digitisation and accelerating technological innovation within the sector,
-                means Out-of-Home communicates faster, more effectively, with greater flexibility, and increasingly benefits
-                from a more reliable accountability.
-            </section>
-            <div class="scroll"><span class="material-symbols-outlined icon">expand_circle_down</span></div>
         </section>
     </header>
-    <main class="scroll-slide">
-        <div class="hero-sub">
-            <div class="hero-sub__text">
-                <h1>The mall environment is an evolving high-traffic shopping & experiential hub</h1>
-            </div>
-            <section class="hero-sub__sub">
-                Our national network reaches 8 provinces, 20 markets and 70 cities spread
-                from coast to coast
-            </section>
+    <main class="main-about-us">
+        <div class="about-us__history">
+            <div class="about-us__history__title"><h1>History</h1></div>
+            <div class="about-us__history__sub-title"><h5>NEO is proud to present its key historical milestones:</h5></div>
+            <div>HISTORy</div>
         </div>
+        
     </main>
+    
     <footer>
         <div class="footer-top-menu">
             <ul class="footer-top-menu__list">
@@ -144,7 +159,6 @@
             </div>
         </div>
     </footer>
-
     <script src="myScript.js"></script>
 </body>
 </html>
