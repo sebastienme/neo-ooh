@@ -1138,8 +1138,7 @@ address {
 }
 
 .header-contact__hero__image {
-    background: url(images/montreal-midnight.jpg);
-    background-position: top;
+    background: url(images/Montreal-city-night.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -1996,7 +1995,8 @@ address {
 
 .hero-about-us__title,
 .about-us__history__title,
-.about-us__people__title {
+.about-us__people__title,
+.about-us__partners__title {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2009,7 +2009,8 @@ address {
 
 .hero-about-us__title > h1,
 .about-us__history__title > h1,
-.about-us__people__title > h1 {
+.about-us__people__title > h1,
+.about-us__partners__title > h1  {
     font-size: var(--gigantic-text);
     padding-left: 200px;
     margin: 0;
@@ -2100,6 +2101,49 @@ address {
 .employe__details__title-name {
     font-size: var(--small-text);
     line-height: 1;
+}
+
+.about-us__partners {
+    min-height: 100vh;
+}
+
+.about-us__partners__parent-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-left: 300px;
+    padding-right: 300px;
+
+    min-height: 70vh;
+}
+
+.about-us__partners__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(135px, 1fr));
+    
+    gap: 15px;
+
+    min-height: 100%;
+}
+
+.about-us__partners__container__logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    border: 1px solid #DDD;
+
+    width: 135px;
+    height: 135px;
+}
+
+.about-us__partners__container__logo > img {
+    width: 120px;
+    height: 60px;
+
+    object-fit:contain;
 }
 
 /*<---end of about-us.html---> */
