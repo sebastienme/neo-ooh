@@ -2067,9 +2067,28 @@ address {
 }
 
 .main-specs__templates__footer__buttons button {
-    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 
+    font-size: 1rem;
+
+    font-family: 'Poppins', sans-serif;
+
+    border: 1px solid var(--dark-color);
+    border-radius: 3px;
+
+    padding: 0 10px 0 10px;
     height: 40px;
+}
+
+.light-button {
+    background-color: var(--light-color);
+}
+
+.dark-button {
+    background-color: var(--dark-color);
+    color: var(--light-color);
 }
 
 
