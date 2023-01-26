@@ -2003,8 +2003,44 @@ address {
 }
 
 .main-specs__templates__section__gallery__image {
+    position: relative;
+
     border: 1px solid var(--light-color);
     line-height: 0;
+}
+
+.main-specs__templates__section__gallery__image.shopping {
+    background-color: var(--shopping-color);
+}
+
+.main-specs__templates__section__gallery__image.otg {
+    background-color: var(--otg-color)
+}
+
+.main-specs__templates__section__gallery__image.fitness {
+    background-color: var(--fitness-color);
+}
+
+.main-specs__templates__section__gallery__image:hover img {
+    opacity: 20%;
+}
+
+.main-specs__templates__section__gallery__image:hover 
+.main-specs__templates__section__gallery__image__text {
+    display: block;
+}
+
+.main-specs__templates__section__gallery__image__text {
+    display: none;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    line-height: 2;
+    text-align: center;
+    color: var(--light-color);
 }
 
 .main-specs__templates__section__gallery__image > img {
@@ -2014,6 +2050,28 @@ address {
     object-fit: cover;
     object-position: center;
 }
+
+.main-specs__templates__footer {
+    display: flex;
+    justify-content: flex-end;
+
+    min-height: 200px;
+}
+
+.main-specs__templates__footer__buttons {
+    display: flex;
+    gap: 15px;
+
+    margin-top: 40px;
+    margin-right: 40px;
+}
+
+.main-specs__templates__footer__buttons button {
+    background-color: transparent;
+
+    height: 40px;
+}
+
 
 /*<---end of specs.html---> */
 
