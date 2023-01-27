@@ -93,7 +93,6 @@ mainMarketsBlock.forEach((element) => {
 
 //....Finish....
 
-
 //....Start....
 //Gallery images variables and functions on market-regions page
 let properties = [
@@ -102,126 +101,144 @@ let properties = [
         "network" : "shopping",
         "imageSrc" : "digital-spectacular-CIA-2.jpg",
         "altAtt" : "digital advertising screen at Carrefour Industriel Alliance",
-        "page" : "1"
+        "page" : "1",
+        "product" : "Shopping LED Spectacular"
     },
     {
         "name" : "Shell Service Station",
         "network" : "on-the-go",
         "imageSrc" : "station-service-loto-quebec.jpg",
         "altAtt" : "digital advertising screen at service station",
-        "page" : "1"
+        "page" : "1",
+        "product" : "Outdoor screens with sound"
     },
     {
         "name" : "Galerie d'Anjou",
         "network" : "shopping",
         "imageSrc" : "Digital - Horizontal - Galerie d'Anjou.jpg",
         "altAtt" : "digital advertising screen at Galerie d'Anjou",
-        "page" : "1"
+        "page" : "1",
+        "product" : "Shopping Horizontal"
     },
     {
         "name" : "Complexe Desjardins",
         "network" : "shopping",
         "imageSrc" : "Complex Desjardins-DV.jpg",
         "altAtt" : "digital advertising screen at Complexe Desjardins",
-        "page" : "1"
+        "page" : "1",
+        "product" : "Shopping Vertical"
     },
     {
         "name" : "Four Seasons",
         "network" : "shopping",
         "imageSrc" : "four-season-backlit.jpg",
         "altAtt" : "Backlit advertising pannel at Four Season",
-        "page" : "1"
+        "page" : "1",
+        "product" : "Shopping Backlit poster"
     },
     {
         "name" : "Convenience Store",
         "network" : "on-the-go",
         "imageSrc" : "c-store.jpg",
         "altAtt" : "digital advertising screen in convenience store",
-        "page" : "1"
+        "page" : "1",
+        "product" : "Indoor Horizontal"
     },
     {
         "name" : "CF Carrefour Laval",
         "network" : "shopping",
         "imageSrc" : "Dominance - CF Carrefour Laval.jpg",
         "altAtt" : "high impact advertising at Carrefour Laval",
-        "page" : "1"
+        "page" : "1",
+        "product" : "Shopping Entrance Dominance"
     },
     {
         "name" : "Nautilus Plus Îles-des-Soeurs",
         "network" : "fitness",
         "imageSrc" : "gym-digital-horizontal-nautilus.jpg",
         "altAtt" : "digital advertising screen in gym Nautilus",
-        "page" : "1"
+        "page" : "1",
+        "product" : "Fitness Horizontal"
     },
     {
         "name" : "Halifax Shopping Centre",
         "network" : "shopping",
         "imageSrc" : "halifax-shopping-centre-skechers.jpg",
         "altAtt" : "High impact advertising at Halifax Shopping Centre",
-        "page" : "1"
+        "page" : "1",
+        "product" : "Shopping Entrance Dominance"
     },
     {
         "name" : "CF Fairview Mall",
         "network" : "shopping",
         "imageSrc" : "shopping-elevator-wrap-fairview-mall.JPG",
         "altAtt" : "High impact advertising in Fairview Mall",
-        "page" : "2"
+        "page" : "2",
+        "product" : "Shopping Elevator wrap"
     },
     {
         "name" : "Nautilus Plus Ville-Marie",
         "network" : "fitness",
         "imageSrc" : "fitness-nautilus-ville-marie.jpg",
         "altAtt" : "digital advertising screen in gym Nautilus Ville-Marie",
-        "page" : "2"
+        "page" : "2",
+        "product" : "Fitness Horizontal"
     },
     {
         "name" : "Alexis Nihon",
         "network" : "shopping",
         "imageSrc" : "digital-vertical-alexis-nihon.jpg",
         "altAtt" : "digital advertising screen in Alexis Nihon",
-        "page" : "2"
+        "page" : "2",
+        "product" : "Shopping Vertical"
     },
     {
         "name" : "Petro-Canada Convenience Store",
         "network" : "on-the-go",
         "imageSrc" : "otg-petro-canada-depaneur.jpg",
         "altAtt" : "digital advertising screen in Petro-Canada convenience store",
-        "page" : "2"
+        "page" : "2",
+        "product" : "Indoor Horizontal"
     },
     {
         "name" : "Georgian Mall",
         "network" : "shopping",
         "imageSrc" : "shopping-mall-poster-georgian-mall.jpg",
         "altAtt" : "backlit poster in Georgian Mall",
-        "page" : "2"
+        "page" : "2",
+        "product" : "Shopping Backlit poster"
     },
     {
         "name" : "Nautilus Plus Îles-des-Soeurs",
         "network" : "fitness",
         "imageSrc" : "fitness-nautilus-ile-des-soeurs.jpg",
         "altAtt" : "digital advertising screen in Nautilus ile-des-soeurs",
-        "page" : "2"
+        "page" : "2",
+        "product" : "Fitness Vertical"
     },
     {
         "name" : "Place Vertu",
         "network" : "shopping",
         "imageSrc" : "shopping-banner-place-vertu.JPG",
         "altAtt" : "advertising banner at Place Vertu",
-        "page" : "2"
+        "page" : "2",
+        "product" : "Shopping Banner"
     },
     {
         "name" : "Shell Service Station",
         "network" : "on-the-go",
         "imageSrc" : "otg-shell-night-station-service.jpg",
         "altAtt" : "digital advertising screen at service station",
-        "page" : "2"
+        "page" : "2",
+        "product" : "Outdoor screens with sound"
     },
     {
         "name" : "Shell Service Station",
         "network" : "on-the-go",
         "imageSrc" : "c-store-vertical-screen.jpg",
         "altAtt" : "digital advertising screen at service station",
-        "page" : "2"
+        "page" : "2",
+        "product" : "Outdoor Vertical"
     }
 ];
 const carouselItemOne = document.querySelector('.carousel__mid__item-1');
@@ -275,10 +292,11 @@ galleryPageNumberLi.forEach((element) => {
 
 //function that display gallery when clicking gallery link
 const galleryLink = document.querySelector('#gallery-link');
-
-galleryLink.addEventListener('click', function() {
-    genereteGalleryOfImages(1);
-})
+function generateGalleryLink() {
+    galleryLink.addEventListener('click', function() {
+        genereteGalleryOfImages(1);
+    })
+}
 
 //function that display map when clicking map link
 const mapLink = document.querySelector('#map-link');
@@ -337,3 +355,16 @@ function openMap() {
     contactUsMap.classList.toggle("show")
 
 }
+
+//....Start...
+const productGallery = document.querySelector('.main-product__section__gallery');
+const pageTitle = document.querySelector('.header-product__footer__title');
+const productNetwork = pageTitle.getAttribute('data-network');
+function genereteGalleryOfProducts() {
+    console.log(productNetwork);
+} 
+
+genereteGalleryOfProducts();
+//....Finish....
+console.log(productNetwork);
+alert("CSS code: ");

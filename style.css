@@ -2094,6 +2094,68 @@ address {
 
 /*<---end of specs.html---> */
 
+/*<---start of product.html---> */
+.product {
+    background-color: var(--neo-color);
+}
+
+.header-product {
+    background: none;
+    min-height:fit-content;
+}
+
+.header-product__footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.header-product__footer__title > h1 {
+    color: var(--shopping-color);
+}
+
+.main-product__menu__list {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+.main-product__menu__list__li {
+    position: relative;
+
+    font-size: var(--h5-text);
+    font-weight: 600;
+    color: var(--shopping-color);
+}
+
+.main-product__menu__list__li::after {
+    position: absolute;
+    content: '';
+    display: block;
+
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+
+    background-color: var(--shopping-color);
+
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.main-product__menu__list__li:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+
+
+/*<---end of product.html---> */
+
 /*<---start of about-us.html---> */
 .header-about-us {
     background: none;
