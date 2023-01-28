@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
 </head>
-<body class="product">
+<body class="product" onload="genereteGalleryOfProducts('digital')">
     <header class="header-product">
         <menu class="top-menu">
             <div class="top-menu__language-toggle">
@@ -68,25 +68,47 @@
     </header>
 
     <main class="main-product">
-        <div class="main-product__menu">
+        <div id="main-product__menu" class="main-product__menu">
             <ul class="main-product__menu__list">
-                <li class="main-product__menu__list__li"><a href="">Digital</a></li>
-                <li class="main-product__menu__list__li"><a href="">Specialty Media</a></li>
-                <li class="main-product__menu__list__li"><a href="">Posters</a></li>
-                <li class="main-product__menu__list__li"><a href="">Banners</a></li>
+                <li class="main-product__menu__list__li" data-product="digital"><a>Digital</a></li>
+                <li class="main-product__menu__list__li" data-product="specialty"><a>Specialty Media</a></li>
+                <li class="main-product__menu__list__li" data-product="poster"><a>Posters</a></li>
+                <li class="main-product__menu__list__li" data-product="banner"><a>Banners</a></li>
             </ul>
         </div>
         <div class="main-product__section">
-            <div class="main-product__section__gallery">
-                
+        <!-- See Javascript genereteGalleryOfProducts(productCat) function -->
+            <a href="#details-section"><div class="main-product__section__gallery"></div></a>
+        </div>
+        <div id="details-section" class="main-product__details">
+            <div class="main-product__details__close"><a class="close-button" href="#main-product__menu"><span class="material-symbols-outlined">close</span></a></div>
+            <div class="main-product__details__top">
+                <h1>Shopping LED Spectacular</h1>
+                <button class="details-buttons light-button">More info</button>
+            </div>
+            <div class="main-product__details__para">
+                <p>
+                    We now offer several Spectacular products using LED technology. Located in areas with high potential, these units will allow you to
+                    capture all the attention by displaying your colors.
+                </p>
+            </div>
+            <div class="main-product__details__buttons">
+                <button class="details-buttons light-button">Locations<span class="material-symbols-outlined">pin_drop</span></button>
+                <button class="details-buttons light-button">Technical Specs<span class="material-symbols-outlined">download</span></button>
+                <button class="details-buttons dark-button">Contact sales team<span class="material-symbols-outlined">mail</span></button>
             </div>
         </div>
-
-
-
-
-
-
+        <div class="main-product__networks">
+            <div class="main-product__networks__title">
+                <h2>Extend your reach with our other<br>Digital Networks</h2>
+            </div>
+            <ul class="main-product__networks__buttons">
+                <li><a href=""><button>Service Stations</button></a></li>
+                <li><a href=""><button>Convenience Stores</button></a></li>
+                <li><a href=""><button>Gyms</button></a></li>
+                <li><a href=""><button>Mobile</button></a></li>
+            </ul>
+        </div>
 
     </main>
     
@@ -155,6 +177,6 @@
             </div>
         </div>
     </footer>
-    <script src="myScript.js"></script>
+    <script src="productsScript.js"></script>
 </body>
 </html>
