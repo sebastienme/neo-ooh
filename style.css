@@ -163,6 +163,7 @@ menu {text-transform: uppercase;}
     justify-content: center;
 
     padding-top: 10px;
+    margin-left: 25px;
 
     min-height: var(--bottom-menu-height);
 }
@@ -577,6 +578,10 @@ address {
     width: 350px;
 }
 
+#search-form-markets:focus-within {
+    border-color: var(--shopping-color);
+}
+
 #search-input-markets {
     background: transparent;
     border: none;
@@ -643,6 +648,37 @@ address {
     margin: 0;
     font-weight: 600;
     scroll-margin-block-start: 2em;
+}
+
+.network-dots__dot {
+    display: inline-block;
+
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
+
+.main-markets-expanded__markets__content .network-dots__dot {
+    height: 7px;
+    width: 7px;
+}
+
+.main-markets-expanded__markets__content .network-dots {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.network-dots__dot.shopping {
+    background-color: var(--shopping-color);
+}
+
+.network-dots__dot.otg {
+    background-color: var(--otg-color);
+}
+
+.network-dots__dot.fitness {
+    background-color: var(--fitness-color);
 }
 
 .expand {
@@ -715,12 +751,11 @@ address {
 }
 
 .main-markets-expanded h5 {
+    display: flex;
+    gap: 8px;
+
     margin: 0;
     font-weight: 400;
-}
-
-.main-markets-expanded h5:hover {
-    color: var(--shopping-color);
 }
 
 .markets__content__block {
@@ -746,7 +781,7 @@ address {
     cursor: pointer;
 }
 
-.expand-less .material-symbols-outlined {
+.expand-less a {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1141,6 +1176,7 @@ address {
     background: url(images/Montreal-city-night.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 
     min-height: calc((100vh - var(--bottom-menu-height) - var(--top-menu-height))*0.7);
 }
@@ -1200,6 +1236,11 @@ address {
 
     border: 2px solid var(--dark-color);
     padding: 8px 25px 8px 25px;
+}
+
+.contact-us-container__right > button:hover {
+    background-color: var(--dark-color);
+    color: var(--light-color);
 }
 
 .contact-us-map {
@@ -1293,6 +1334,11 @@ address {
 .contact-us-container__left__adress.bottom,
 .contact-us-container__left__phone-email.bottom  {
     color: var(--light-color)
+}
+
+.linkedin-icon {
+    width: 48px;
+    height: 48px;
 }
 
 /*<---end of contact.html---> */
@@ -2235,6 +2281,12 @@ address {
     font-weight: 600;
 }
 
+.main-product__details__top > button:hover {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
+
 .main-product__details__para {
     margin: 20px 100px 0 100px;
 }
@@ -2389,6 +2441,11 @@ address {
     padding-top: 10px;
     padding-bottom: 10px;
     width: 150px;    
+}
+
+.hero-about-us__intro__menu__list button:hover {
+    background-color: var(--dark-color);
+    color: var(--light-color);
 }
 
 .about-us__history {

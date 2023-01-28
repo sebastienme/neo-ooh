@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
 </head>
 <body class="markets">
-    <header class="header-markets">
+    <header id="header" class="header-markets">
         <menu class="top-menu">
             <div class="top-menu__language-toggle">
                 <a href="">FR</a>
@@ -57,7 +57,7 @@
             </div>
         </menu>
         <section class="hero-markets">
-            <div class="hero-markets__title"><h1>23 markets</h1></div>
+            <div id="markets" class="hero-markets__title"><h1>23 markets</h1></div>
             <div class="hero-markets__sub-title">
                 <p>Explore all 23 Markets coast to coast and reach out to one of our Account Managers
                     who will build a campaign taylored to your goals using the latest mobile data to
@@ -86,6 +86,11 @@
                                 pin_drop
                                 </span>
                             <h4 id="quebec">Quebec</h4>
+                            <div class="network-dots">
+                                <span class="network-dots__dot shopping"></span>
+                                <span class="network-dots__dot otg"></span>
+                                <span class="network-dots__dot fitness"></span>
+                            </div>
                         </div>
                         <div class="expand">
                             <div>Expand</div>
@@ -100,6 +105,11 @@
                         <div class="main-markets__block__content__title">
                             <span class="material-symbols-outlined">pin_drop</span>
                             <h4 id="ontario">Ontario</h4>
+                            <div class="network-dots">
+                                <span class="network-dots__dot shopping"></span>
+                                <span class="network-dots__dot otg"></span>
+                                <span class="network-dots__dot fitness"></span>
+                            </div>
                         </div>
                         <div class="expand">
                             <div>Expand</div>
@@ -109,11 +119,14 @@
                 </a>
             </div>
             <div class="main-markets__block" data-markets="east">
-                <a href="#east">
+                <a href="#markets">
                     <div class="main-markets__block__content">
                         <div class="main-markets__block__content__title">
                             <span class="material-symbols-outlined">pin_drop</span>
                             <h4 id="east">East</h4>
+                            <div class="network-dots">
+                                <span class="network-dots__dot shopping"></span>
+                            </div>
                         </div>
                         <div class="expand">
                             <div>Expand</div>
@@ -123,11 +136,14 @@
                 </a>
             </div>
             <div class="main-markets__block" data-markets="west">
-                <a href="#west">
+                <a href="#markets">
                     <div class="main-markets__block__content">
                         <div class="main-markets__block__content__title">
                             <span class="material-symbols-outlined">pin_drop</span>
                             <h4 id="west">West</h4>
+                            <div class="network-dots">
+                                <span class="network-dots__dot shopping"></span>
+                            </div>
                         </div>
                         <div class="expand">
                             <div>Expand</div>
@@ -143,7 +159,14 @@
                 <div class="main-markets-expanded__markets__content">
                     <span class="material-symbols-outlined">pin_drop</span>
                     <div class="markets__content__block">
-                        <h5><a href="markets-regions.html">Greater Montreal</a></h5>
+                        <h5>
+                            <a href="markets-regions.html">Greater Montreal</a>                    
+                            <div class="network-dots">
+                                <span class="network-dots__dot shopping"></span>
+                                <span class="network-dots__dot otg"></span>
+                                <span class="network-dots__dot fitness"></span>
+                            </div>
+                        </h5>
                         <div class="content__details">
                             <ul>
                                 <li>Mapping</li>
@@ -156,7 +179,14 @@
                 <div class="main-markets-expanded__markets__content">
                     <span class="material-symbols-outlined">pin_drop</span>
                     <div class="markets__content__block">
-                        <h5>Central-West Quebec</h5>
+                        <h5>
+                            <a href="">Central-West Quebec</a>                    
+                            <div class="network-dots">
+                                <span class="network-dots__dot shopping"></span>
+                                <span class="network-dots__dot otg"></span>
+                                <span class="network-dots__dot fitness"></span>
+                            </div>
+                        </h5>
                         <div class="content__details">
                             <ul>
                                 <li>Mapping</li>
@@ -169,7 +199,14 @@
                 <div class="main-markets-expanded__markets__content">
                     <span class="material-symbols-outlined">pin_drop</span>
                     <div class="markets__content__block">
-                        <h5>Eastern Townships</h5>
+                        <h5>
+                            <a href="">Eastern Townships</a>                    
+                            <div class="network-dots">
+                                <span class="network-dots__dot shopping"></span>
+                                <span class="network-dots__dot otg"></span>
+                                <span class="network-dots__dot fitness"></span>
+                            </div>
+                        </h5>
                         <div class="content__details">
                             <ul>
                                 <li>Mapping</li>
@@ -182,7 +219,14 @@
                 <div class="main-markets-expanded__markets__content">
                     <span class="material-symbols-outlined">pin_drop</span>
                     <div class="markets__content__block">
-                        <h5>Central-East Quebec</h5>
+                        <h5>
+                            <a href="">Central-East Quebec</a>                    
+                            <div class="network-dots">
+                                <span class="network-dots__dot shopping"></span>
+                                <span class="network-dots__dot otg"></span>
+                                <span class="network-dots__dot fitness"></span>
+                            </div>
+                        </h5>
                         <div class="content__details">
                             <ul>
                                 <li>Mapping</li>
@@ -195,7 +239,14 @@
                 <div class="main-markets-expanded__markets__content">
                     <span class="material-symbols-outlined">pin_drop</span>
                     <div class="markets__content__block">
-                        <h5>Hull-Gatineau</h5>
+                        <h5>
+                            <a href="">Hull-Gatineau</a>                    
+                            <div class="network-dots">
+                                <span class="network-dots__dot shopping"></span>
+                                <span class="network-dots__dot otg"></span>
+                                <span class="network-dots__dot fitness"></span>
+                            </div>
+                        </h5>
                         <div class="content__details">
                             <ul>
                                 <li>Mapping</li>
@@ -208,7 +259,13 @@
                 <div class="main-markets-expanded__markets__content">
                     <span class="material-symbols-outlined">pin_drop</span>
                     <div class="markets__content__block">
-                        <h5>Northeast Quebec</h5>
+                        <h5>
+                            <a href="">Northeast Quebec</a>                    
+                            <div class="network-dots">
+                                <span class="network-dots__dot shopping"></span>
+                                <span class="network-dots__dot otg"></span>
+                            </div>
+                        </h5>
                         <div class="content__details">
                             <ul>
                                 <li>Mapping</li>
@@ -221,7 +278,13 @@
                 <div class="main-markets-expanded__markets__content">
                     <span class="material-symbols-outlined">pin_drop</span>
                     <div class="markets__content__block">
-                        <h5>Northwest Quebec</h5>
+                        <h5>
+                            <a href="">Northwest Quebec</a>                    
+                            <div class="network-dots">
+                                <span class="network-dots__dot shopping"></span>
+                                <span class="network-dots__dot otg"></span>
+                            </div>
+                        </h5>
                         <div class="content__details">
                             <ul>
                                 <li>Mapping</li>
@@ -234,7 +297,14 @@
                 <div class="main-markets-expanded__markets__content">
                     <span class="material-symbols-outlined">pin_drop</span>
                     <div class="markets__content__block">
-                        <h5>Quebec City Region</h5>
+                        <h5>
+                            <a href="">Quebec City Region</a>                    
+                            <div class="network-dots">
+                                <span class="network-dots__dot shopping"></span>
+                                <span class="network-dots__dot otg"></span>
+                                <span class="network-dots__dot fitness"></span>
+                            </div>
+                        </h5>
                         <div class="content__details">
                             <ul>
                                 <li>Mapping</li>
@@ -246,8 +316,8 @@
                 </div>
             </div>
             <div class="expand-less">
-                <div>Close</div>
-                <span class="material-symbols-outlined">expand_less</span>
+                <div><a href="#header">Close</a></div>
+                <a href="#header"><span class="material-symbols-outlined">expand_less</span></a>
             </div>
         </section>
         <section class="main-markets-expanded ontario">
@@ -256,7 +326,14 @@
                 <div class="main-markets-expanded__markets__content">
                     <span class="material-symbols-outlined">pin_drop</span>
                     <div class="markets__content__block">
-                        <h5>Greater Toronto</h5>
+                        <h5>
+                            <a href="">Greater Toronto</a>                    
+                            <div class="network-dots">
+                                <span class="network-dots__dot shopping"></span>
+                                <span class="network-dots__dot otg"></span>
+                                <span class="network-dots__dot fitness"></span>
+                            </div>
+                        </h5>
                         <div class="content__details">
                             <ul>
                                 <li>Mapping</li>
@@ -269,7 +346,14 @@
                 <div class="main-markets-expanded__markets__content">
                     <span class="material-symbols-outlined">pin_drop</span>
                     <div class="markets__content__block">
-                        <h5>Ottawa</h5>
+                        <h5>
+                            <a href="">Ottawa</a>                    
+                            <div class="network-dots">
+                                <span class="network-dots__dot shopping"></span>
+                                <span class="network-dots__dot otg"></span>
+                                <span class="network-dots__dot fitness"></span>
+                            </div>
+                        </h5>
                         <div class="content__details">
                             <ul>
                                 <li>Mapping</li>
@@ -282,7 +366,13 @@
                 <div class="main-markets-expanded__markets__content">
                     <span class="material-symbols-outlined">pin_drop</span>
                     <div class="markets__content__block">
-                        <h5>Kingston-Belleville</h5>
+                        <h5>
+                            <a href="">Kingston-Belleville</a>                    
+                            <div class="network-dots">
+                                <span class="network-dots__dot shopping"></span>
+                                <span class="network-dots__dot otg"></span>
+                            </div>
+                        </h5>
                         <div class="content__details">
                             <ul>
                                 <li>Mapping</li>
@@ -295,7 +385,13 @@
                 <div class="main-markets-expanded__markets__content">
                     <span class="material-symbols-outlined">pin_drop</span>
                     <div class="markets__content__block">
-                        <h5>South-Western Ontario</h5>
+                        <h5>
+                            <a href="">South-Western Ontario</a>                    
+                            <div class="network-dots">
+                                <span class="network-dots__dot shopping"></span>
+                                <span class="network-dots__dot otg"></span>
+                            </div>
+                        </h5>
                         <div class="content__details">
                             <ul>
                                 <li>Mapping</li>
@@ -308,7 +404,13 @@
                 <div class="main-markets-expanded__markets__content">
                     <span class="material-symbols-outlined">pin_drop</span>
                     <div class="markets__content__block">
-                        <h5>South-Central Ontario</h5>
+                        <h5>
+                            <a href="">South-Central Ontario</a>                    
+                            <div class="network-dots">
+                                <span class="network-dots__dot shopping"></span>
+                                <span class="network-dots__dot otg"></span>
+                            </div>
+                        </h5>
                         <div class="content__details">
                             <ul>
                                 <li>Mapping</li>
@@ -321,7 +423,13 @@
                 <div class="main-markets-expanded__markets__content">
                     <span class="material-symbols-outlined">pin_drop</span>
                     <div class="markets__content__block">
-                        <h5>South-Eastern Ontario</h5>
+                        <h5>
+                            <a href="">South-Eastern Ontario</a>                    
+                            <div class="network-dots">
+                                <span class="network-dots__dot shopping"></span>
+                                <span class="network-dots__dot otg"></span>
+                            </div>
+                        </h5>
                         <div class="content__details">
                             <ul>
                                 <li>Mapping</li>
@@ -334,7 +442,12 @@
                 <div class="main-markets-expanded__markets__content">
                     <span class="material-symbols-outlined">pin_drop</span>
                     <div class="markets__content__block">
-                        <h5>Eastern Ontario</h5>
+                        <h5>
+                            <a href="">Eastern Ontario</a>                    
+                            <div class="network-dots">
+                                <span class="network-dots__dot otg"></span>
+                            </div>
+                        </h5>
                         <div class="content__details">
                             <ul>
                                 <li>Mapping</li>
@@ -347,7 +460,12 @@
                 <div class="main-markets-expanded__markets__content">
                     <span class="material-symbols-outlined">pin_drop</span>
                     <div class="markets__content__block">
-                        <h5>North-Western Ontario</h5>
+                        <h5>
+                            <a href="">North-Western Ontario</a>                    
+                            <div class="network-dots">
+                                <span class="network-dots__dot otg"></span>
+                            </div>
+                        </h5>
                         <div class="content__details">
                             <ul>
                                 <li>Mapping</li>
@@ -359,8 +477,8 @@
                 </div>
             </div>
             <div class="expand-less">
-                <div>Close</div>
-                <span class="material-symbols-outlined">expand_less</span>
+                <div><a href="#header">Close</a></div>
+                <a href="#header"><span class="material-symbols-outlined">expand_less</span></a>
             </div>
         </section>
         <section class="main-markets-expanded east">
@@ -369,7 +487,12 @@
                 <div class="main-markets-expanded__markets__content">
                     <span class="material-symbols-outlined">pin_drop</span>
                     <div class="markets__content__block">
-                        <h5>New-Brunswick</h5>
+                        <h5>
+                            <a href="">New-Brunswick</a>                    
+                            <div class="network-dots">
+                                <span class="network-dots__dot shopping"></span>
+                            </div>
+                        </h5>
                         <div class="content__details">
                             <ul>
                                 <li>Mapping</li>
@@ -382,7 +505,12 @@
                 <div class="main-markets-expanded__markets__content">
                     <span class="material-symbols-outlined">pin_drop</span>
                     <div class="markets__content__block">
-                        <h5>Halifax</h5>
+                        <h5>
+                            <a href="">Halifax</a>                    
+                            <div class="network-dots">
+                                <span class="network-dots__dot shopping"></span>
+                            </div>
+                        </h5>
                         <div class="content__details">
                             <ul>
                                 <li>Mapping</li>
@@ -394,8 +522,8 @@
                 </div>
             </div>
             <div class="expand-less">
-                <div>Close</div>
-                <span class="material-symbols-outlined">expand_less</span>
+                <div><a href="#header">Close</a></div>
+                <a href="#header"><span class="material-symbols-outlined">expand_less</span></a>
             </div>
         </section>
         <section class="main-markets-expanded west">
@@ -404,7 +532,12 @@
                 <div class="main-markets-expanded__markets__content">
                     <span class="material-symbols-outlined">pin_drop</span>
                     <div class="markets__content__block">
-                        <h5>Greater Vancouver</h5>
+                        <h5>
+                            <a href="">Greater Vancouver</a>                    
+                            <div class="network-dots">
+                                <span class="network-dots__dot shopping"></span>
+                            </div>
+                        </h5>
                         <div class="content__details">
                             <ul>
                                 <li>Mapping</li>
@@ -417,7 +550,12 @@
                 <div class="main-markets-expanded__markets__content">
                     <span class="material-symbols-outlined">pin_drop</span>
                     <div class="markets__content__block">
-                        <h5>Calgary Region</h5>
+                        <h5>
+                            <a href="">Calgary Region</a>                    
+                            <div class="network-dots">
+                                <span class="network-dots__dot shopping"></span>
+                            </div>
+                        </h5>
                         <div class="content__details">
                             <ul>
                                 <li>Mapping</li>
@@ -430,7 +568,12 @@
                 <div class="main-markets-expanded__markets__content">
                     <span class="material-symbols-outlined">pin_drop</span>
                     <div class="markets__content__block">
-                        <h5>Edmonton Region</h5>
+                        <h5>
+                            <a href="">Edmonton Region</a>                    
+                            <div class="network-dots">
+                                <span class="network-dots__dot shopping"></span>
+                            </div>
+                        </h5>
                         <div class="content__details">
                             <ul>
                                 <li>Mapping</li>
@@ -443,7 +586,12 @@
                 <div class="main-markets-expanded__markets__content">
                     <span class="material-symbols-outlined">pin_drop</span>
                     <div class="markets__content__block">
-                        <h5>Winnipeg Region</h5>
+                        <h5>
+                            <a href="">Winnipeg Region</a>                    
+                            <div class="network-dots">
+                                <span class="network-dots__dot shopping"></span>
+                            </div>
+                        </h5>
                         <div class="content__details">
                             <ul>
                                 <li>Mapping</li>
@@ -456,7 +604,12 @@
                 <div class="main-markets-expanded__markets__content">
                     <span class="material-symbols-outlined">pin_drop</span>
                     <div class="markets__content__block">
-                        <h5>Regina Region</h5>
+                        <h5>
+                            <a href="">Regina Region</a>                    
+                            <div class="network-dots">
+                                <span class="network-dots__dot shopping"></span>
+                            </div>
+                        </h5>
                         <div class="content__details">
                             <ul>
                                 <li>Mapping</li>
@@ -468,8 +621,8 @@
                 </div>
             </div>
             <div class="expand-less">
-                <div>Close</div>
-                <span class="material-symbols-outlined">expand_less</span>
+                <div><a href="#header">Close</a></div>
+                <a href="#header"><span class="material-symbols-outlined">expand_less</span></a>
             </div>
         </section>
     </main>
