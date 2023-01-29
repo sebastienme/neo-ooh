@@ -111,6 +111,9 @@ menu {text-transform: uppercase;}
 }
 
 .top-menu__language-toggle {
+    display: flex;
+    align-items: center;
+
     font-size: var(--small-text);
 
     margin-left: 15px;
@@ -120,6 +123,55 @@ menu {text-transform: uppercase;}
     border-right: 1px solid var(--light-color);
     border-left: 1px solid var(--light-color);
 }
+
+.language-toggle-link {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .language-toggle-link::before,
+  .language-toggle-link::after {
+   content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+  }
+  .language-toggle-link::before {
+    background-color: var(--light-color);
+    height: 2px;
+    bottom: 0;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  .language-toggle-link::after {
+    content: attr(data-replace);
+    height: 100%;
+    top: 0;
+    transform-origin: 100% 50%;
+    transform: translate3d(200%, 0, 0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+    color: var(--light-color);
+  }
+  
+  .language-toggle-link:hover::before {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+  }
+  .language-toggle-link:hover::after {
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .language-toggle-link span {
+    display: inline-block;
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+  .language-toggle-link:hover span {
+    transform: translate3d(-200%, 0, 0);
+  }
+  
 
 .top-menu.right {gap: 20px;}
 
@@ -619,6 +671,11 @@ address {
     min-width: 250px;
 }
 
+.main-markets__block:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+
+}
+
 .main-markets__block-expanded {
     border: 1px solid var(--light-color);
     border-bottom: none;
@@ -657,6 +714,9 @@ address {
     height: 10px;
     width: 10px;
     border-radius: 50%;
+
+    line-height: 1;
+
 }
 
 .network-dots__dot:hover::after {
@@ -666,7 +726,7 @@ address {
     text-align: center;
 
     border-radius: 5px;
-    padding: 4px;
+    padding: 8px;
 }
 
 .main-markets-expanded__markets__content .network-dots__dot {
@@ -1071,7 +1131,9 @@ address {
 
 .sales-contact__left__photo > img {
     width: 100px;
-    height: auto;
+    height: 125px;
+    
+    object-fit: cover;
 }
 
 .sales-contact__left__details {
@@ -1288,7 +1350,6 @@ address {
 .contact-us-map {
    visibility: hidden;
     opacity: 0;
-    
   
     max-height: 0;
 }
@@ -1297,7 +1358,7 @@ address {
     visibility: visible;
     opacity: 1;
 
-    transition: max-height 1s; 
+    transition: max-height 0.5s; 
     max-height: 600px;
 }
 
