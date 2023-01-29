@@ -1280,7 +1280,7 @@ address {
     padding: 8px 25px 8px 25px;
 }
 
-.contact-us-container__right > button:hover {
+.contact-us-container__right button:hover {
     background-color: var(--dark-color);
     color: var(--light-color);
 }
@@ -1335,6 +1335,12 @@ address {
 
 #form-1 label {
     font-size: var(--small-text);
+}
+
+#form-1 input:focus, #form-1 textarea:focus {
+    border: 1px solid var(--shopping-color);
+
+    outline: none;
 }
 
 #first_name, #last_name, #email, #form-1 textarea {
