@@ -1270,7 +1270,7 @@ address {
     margin-right: 100px;
 }
 
-.contact-us-container__right > button {
+.contact-us-container__right button {
     background-color: transparent;
     font-weight: 600;
 
@@ -1286,15 +1286,25 @@ address {
 }
 
 .contact-us-map {
-    position: absolute;
+   visibility: hidden;
     opacity: 0;
-    z-index: -10;
+    
+  
+    max-height: 0;
 }
 
 .contact-us-map.show {
-    position: static;
+    visibility: visible;
     opacity: 1;
-    z-index: 1;
+
+    transition: max-height 1s; 
+    max-height: 600px;
+}
+
+.contact-us-form {
+    position: relative;
+    background-color: var(--neo-color)
+    
 }
 
 .contact-us-form__title {
@@ -1358,6 +1368,28 @@ address {
 
     margin-top: 50px;
     padding: 10px 25px 10px 25px;
+
+    transition: 0.5s;
+}
+
+.submit-button > span {
+    position: absolute;
+    
+    margin-left: 20px;
+    margin-top: 3px;
+    opacity: 0;
+
+    transition: 0.5s;
+}
+
+.submit-button:hover > span {
+    opacity: 1;
+    margin-left: 4px;
+}
+
+.submit-button:hover {
+    padding-left: 15px;
+    padding-right: 35px;
 }
 
 .contact-us-container.bottom {
