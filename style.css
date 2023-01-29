@@ -652,10 +652,21 @@ address {
 
 .network-dots__dot {
     display: inline-block;
+    position: relative;
 
     height: 10px;
     width: 10px;
     border-radius: 50%;
+}
+
+.network-dots__dot:hover::after {
+    position: absolute;
+
+    font-size: var(--small-text);
+    text-align: center;
+
+    border-radius: 5px;
+    padding: 4px;
 }
 
 .main-markets-expanded__markets__content .network-dots__dot {
@@ -673,13 +684,44 @@ address {
     background-color: var(--shopping-color);
 }
 
+.network-dots__dot.shopping:hover::after {
+    content: "Shopping Malls";
+    background-color: var(--shopping-color);
+
+    bottom: 200%;
+    margin-left: -60px;
+
+    width: 120px;
+}
+
 .network-dots__dot.otg {
     background-color: var(--otg-color);
+}
+
+.network-dots__dot.otg:hover::after {
+    content: "C-Stores and Service Stations";
+    background-color: var(--otg-color);
+
+    bottom: 200%;
+    margin-left: -60px;
+
+    width: 120px;
 }
 
 .network-dots__dot.fitness {
     background-color: var(--fitness-color);
 }
+
+.network-dots__dot.fitness:hover::after {
+    content: "Gyms";
+    background-color: var(--fitness-color);
+
+    bottom: 200%;
+    margin-left: -40px;
+
+    width: 80px;
+}
+
 
 .expand {
     display: flex;
