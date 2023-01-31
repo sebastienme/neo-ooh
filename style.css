@@ -14,6 +14,7 @@
     --neo-color: #2b2d43;
     --dark-color: #0b0d25;
     --dark-light-color: #838383;
+    --grey-color: rgb(206, 206, 206);
     --light-color: #ffffff;
 
     --gigantic-text: 4.768rem;
@@ -2717,17 +2718,18 @@ address {
 .about-us__people__cards {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    row-gap: 80px;
 
     color: var(--dark-color);
 }
 
 .about-us__people__title__cards__employe {
-    height: 70vh;
+    
     overflow: hidden;
 }
 
 .employe-div {
-    height: 550px;
+    height: 560px;
     overflow: hidden;
 }
 
@@ -2736,7 +2738,6 @@ address {
     height: 100%;
 
     object-fit: cover;
-
     transition: 300ms ease-out;
 }
 
@@ -2753,7 +2754,7 @@ address {
 
 .employe__details__name {
     font-weight: 600;
-    margin-top: 15px;
+    margin-top: 25px;
 }
 
 .employe__details__title-name {
@@ -2768,6 +2769,7 @@ address {
 }
 
 .about-us__partners {
+    margin-top: 80px;
     min-height: 100vh;
 }
 
@@ -2871,10 +2873,119 @@ address {
     object-fit:fill;
 }
 
-
-
 /*<---end of about-us.html---> */
 
+/*<---start of employe.html---> */
+.header-employe {
+    background: none;
+    background-color: var(--neo-color);
+    min-height: fit-content;
+}
+
+.flex-section {
+    display: flex;
+}
+
+.header-employe__details {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.header-employe__details__items {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 100px;
+    margin-right: 70px;
+    margin-top: 100px;
+
+    min-height: 500px;
+}
+
+.header-employe__details__items a {
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+.header-employe__details__items__link {
+    margin-bottom: 175px;
+}
+
+.header-employe__details__items h1 {
+    font-weight: 600;
+    text-transform: none;
+}
+
+.header-employe__details__items__role {
+    font-size: var(--h4-text);
+    font-weight: 300;
+
+    margin-top: 50px;
+}
+
+.header-employe__image {
+    width: 50%;
+}
+
+.header-employe__image > img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.employe__bottom {
+    background-color: var(--grey-color);
+    color: var(--neo-color);
+}
+
+.employe__bottom > p {
+    font-weight: 300;
+    font-size: var(--h5-text);
+    padding: 100px 200px 50px 100px;
+}
+
+.employe__bottom__personal {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+
+    margin-right: 100px;
+    padding-bottom: 35px;
+}
+
+.employe__bottom__personal__name {
+    font-size: var(h5);
+    font-weight: 600;
+}
+
+/*start hover link CSS*/
+.header-employe__details__items__link > a {
+    position: relative;
+}
+
+.header-employe__details__items__link > a::after {
+    position: absolute;
+    content: '';
+    display: block;
+
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 50%;
+
+    background-color: var(--light-color);
+
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.header-employe__details__items__link > a:hover::after {
+    width: 100%;
+    left: 0;
+}
+/*end hover link CSS*/
+
+/*<---end of employe.html---> */
 @media only screen and (max-width: 1700px) {
     .hero, .hero-sub {
         padding-left: 200px;
