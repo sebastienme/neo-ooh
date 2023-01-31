@@ -200,6 +200,8 @@ menu {text-transform: uppercase;}
     position: sticky;
     top: 0;
 
+    z-index: 10;
+
     background-color: var(--dark-color);
     min-height: var(--bottom-menu-height);
 }
@@ -2884,6 +2886,7 @@ address {
 
 .flex-section {
     display: flex;
+    line-height: 0;
 }
 
 .header-employe__details {
@@ -2937,6 +2940,8 @@ address {
 .employe__bottom {
     background-color: var(--grey-color);
     color: var(--neo-color);
+
+    min-height: 350px;
 }
 
 .employe__bottom > p {
