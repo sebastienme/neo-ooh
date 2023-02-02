@@ -225,3 +225,22 @@ function hideSeeMore() {
         console.log(lastDivChildHeight)
     }
 }
+
+const employeImage = document.querySelectorAll('.employe-div__img');
+
+employeImage.forEach((element) => {
+    element.addEventListener('click', function() {
+        function newLocation() {
+            document.location.href= `employe.html?${element.getAttribute('data-id')}`;
+        }
+        newLocation();
+    })
+})
+
+window.onload = function () {
+    console.log(window.location.search.split('?')[1]);
+
+    let employeIdNumber = window.location.search.split('?')[1];
+
+    generateHeaderEmploye(employeIdNumber);
+}

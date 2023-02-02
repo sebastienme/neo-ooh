@@ -2746,6 +2746,9 @@ address {
     transition: 300ms ease-out;
 }
 
+.employe-div__img {
+
+}
 
 .employe-div > img:hover {
     transform: scale(1.1);
