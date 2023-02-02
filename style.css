@@ -2737,6 +2737,8 @@ address {
 }
 
 .employe-div > img {
+    cursor: pointer;
+
     width: 100%;
     height: 100%;
 
@@ -2967,6 +2969,7 @@ address {
 }
 
 .about-us__people__cards.dark-section{
+    position: relative;
     grid-template-rows: repeat(1, 1fr);
     grid-auto-rows: 0; 
     overflow-y: hidden; 
@@ -2980,20 +2983,46 @@ address {
     color: var(--light-color);
 }
 
-.main-about-us.main-employe {
-    position: relative;
-}
-
 .see-more {
-    background-color: #e83641;
-    opacity: 0.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-color: var(--neo-color);
 
-    height: 300px;
-    min-width: 100%;
+    padding-top: 20px;
+    padding-bottom: 100px;
 }
 
-.see-more__text {
+.see-more__text, .see-more__text__link {
+    text-transform: uppercase;
+    font-weight: 300;
     color: var(--light-color);
+}
+
+.see-more__sign {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: 15px;
+
+    width: 50px;
+    height: 50px;
+}
+
+.see-more__sign__cross-1 {
+    height: 50%;
+    width: 50%;
+}
+
+.see-more__sign__cross-2 {
+    border-left: 1px solid var(--light-color);
+    height: 50%;
+    width: 50%;
+}
+
+.bottom-line {
+    border-bottom: 1px solid var(--light-color);
 }
 
 /*start hover link CSS*/
