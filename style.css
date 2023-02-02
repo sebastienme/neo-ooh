@@ -2720,6 +2720,7 @@ address {
 .about-us__people__cards {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    
     row-gap: 80px;
 
     color: var(--dark-color);
@@ -2761,6 +2762,7 @@ address {
 
 .employe__details__title-name {
     font-size: var(--small-text);
+    font-weight: 200;
     line-height: 1;
 }
 
@@ -2962,6 +2964,36 @@ address {
 .employe__bottom__personal__name {
     font-size: var(h5);
     font-weight: 600;
+}
+
+.about-us__people__cards.dark-section{
+    grid-template-rows: repeat(1, 1fr);
+    grid-auto-rows: 0; 
+    overflow-y: hidden; 
+}
+
+.dark-section {
+    background-color: var(--neo-color);
+}
+
+.about-us__people__title__cards__employe__details.light-text {
+    color: var(--light-color);
+}
+
+.main-about-us.main-employe {
+    position: relative;
+}
+
+.see-more {
+    background-color: #e83641;
+    opacity: 0.5;
+
+    height: 300px;
+    min-width: 100%;
+}
+
+.see-more__text {
+    color: var(--light-color);
 }
 
 /*start hover link CSS*/

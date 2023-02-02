@@ -1,6 +1,6 @@
 let employe = [
     {
-        "name" : "Ronald Tapiero",
+        "name" : "Ronald Tapiéro",
         "id" : "1",
         "imageSrc" : "Ronald.jpg",
         "altAtt" : "Ronald Tapiero",
@@ -16,6 +16,132 @@ let employe = [
         "title" : "VP Finance, Numbers guy",
         "description" : "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
         "linkedin" : "https://www.linkedin.com/"
+    },
+    {
+        "name" : "Luc Quétel",
+        "id" : "3",
+        "imageSrc" : "Luc.jpg",
+        "altAtt" : "Luc Quetel",
+        "title" : "Executive VP Partner",
+        "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+        "linkedin" : "https://www.linkedin.com/company/neo-ooh/"
+    },
+    {
+        "name" : "Ismaël Alaoui",
+        "id" : "4",
+        "imageSrc" : "Ismael.jpg",
+        "altAtt" : "Ismael Alaoui",
+        "title" : "Executive VP Partner",
+        "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+        "linkedin" : "https://www.linkedin.com/company/neo-ooh/"
+    },
+    {
+        "name" : "Luc Quetel",
+        "id" : "3",
+        "imageSrc" : "Luc.jpg",
+        "altAtt" : "Luc Quetel",
+        "title" : "Executive VP Partner",
+        "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+        "linkedin" : "https://www.linkedin.com/company/neo-ooh/"
+    },
+    {
+        "name" : "Luc Quetel",
+        "id" : "3",
+        "imageSrc" : "Luc.jpg",
+        "altAtt" : "Luc Quetel",
+        "title" : "Executive VP Partner",
+        "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+        "linkedin" : "https://www.linkedin.com/company/neo-ooh/"
+    },
+    {
+        "name" : "Luc Quetel",
+        "id" : "3",
+        "imageSrc" : "Luc.jpg",
+        "altAtt" : "Luc Quetel",
+        "title" : "Executive VP Partner",
+        "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+        "linkedin" : "https://www.linkedin.com/company/neo-ooh/"
+    },
+    {
+        "name" : "Luc Quetel",
+        "id" : "3",
+        "imageSrc" : "Luc.jpg",
+        "altAtt" : "Luc Quetel",
+        "title" : "Executive VP Partner",
+        "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+        "linkedin" : "https://www.linkedin.com/company/neo-ooh/"
+    },
+    {
+        "name" : "Luc Quetel",
+        "id" : "3",
+        "imageSrc" : "Luc.jpg",
+        "altAtt" : "Luc Quetel",
+        "title" : "Executive VP Partner",
+        "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+        "linkedin" : "https://www.linkedin.com/company/neo-ooh/"
+    },
+    {
+        "name" : "Luc Quetel",
+        "id" : "3",
+        "imageSrc" : "Luc.jpg",
+        "altAtt" : "Luc Quetel",
+        "title" : "Executive VP Partner",
+        "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+        "linkedin" : "https://www.linkedin.com/company/neo-ooh/"
+    },
+    {
+        "name" : "Luc Quetel",
+        "id" : "3",
+        "imageSrc" : "Luc.jpg",
+        "altAtt" : "Luc Quetel",
+        "title" : "Executive VP Partner",
+        "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+        "linkedin" : "https://www.linkedin.com/company/neo-ooh/"
+    },
+    {
+        "name" : "Luc Quetel",
+        "id" : "3",
+        "imageSrc" : "Luc.jpg",
+        "altAtt" : "Luc Quetel",
+        "title" : "Executive VP Partner",
+        "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+        "linkedin" : "https://www.linkedin.com/company/neo-ooh/"
+    },
+    {
+        "name" : "Luc Quetel",
+        "id" : "3",
+        "imageSrc" : "Luc.jpg",
+        "altAtt" : "Luc Quetel",
+        "title" : "Executive VP Partner",
+        "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+        "linkedin" : "https://www.linkedin.com/company/neo-ooh/"
+    },
+    {
+        "name" : "Luc Quetel",
+        "id" : "3",
+        "imageSrc" : "Luc.jpg",
+        "altAtt" : "Luc Quetel",
+        "title" : "Executive VP Partner",
+        "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+        "linkedin" : "https://www.linkedin.com/company/neo-ooh/"
+    },
+    {
+        "name" : "Luc Quetel",
+        "id" : "3",
+        "imageSrc" : "Luc.jpg",
+        "altAtt" : "Luc Quetel",
+        "title" : "Executive VP Partner",
+        "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+        "linkedin" : "https://www.linkedin.com/company/neo-ooh/"
+    },
+    {
+        "name" : "Luc Quetel",
+        "id" : "3",
+        "imageSrc" : "Luc.jpg",
+        "altAtt" : "Luc Quetel",
+        "title" : "Executive VP Partner",
+        "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+        "linkedin" : "https://www.linkedin.com/company/neo-ooh/"
     },
     {
         "name" : "Luc Quetel",
@@ -40,7 +166,9 @@ employeDivImg.forEach((element) => {
     })
 })
 
+//function that display employe informations at the top of the employe page
 function generateHeaderEmploye(idOfEmploye) {
+    
     const name = document.querySelector('.header-employe__details__items h1');
     const bottomName = document.querySelector('.employe__bottom__personal__name');
     const title = document.querySelector('.header-employe__details__items__role');
@@ -57,4 +185,16 @@ function generateHeaderEmploye(idOfEmploye) {
     image.src = `images/${employeToDisplay.imageSrc}`;
     linkedinLink.setAttribute('href', employeToDisplay.linkedin);
 
+}
+
+//employee list
+function generateHideSection() {
+    const employeSection = document.querySelector('.main-about-us.main-employe');
+    let div;
+
+    div = document.createElement('div');
+    div.className = "see-more";
+    employeSection.appendChild(div);
+
+    
 }
