@@ -998,13 +998,16 @@ address {
 .carousel__top {
     display: flex;
     justify-content: center;
+    align-items: center;
 
     margin: 6rem 0 2rem 0;
 }
 
 .carousel__top__return {
     display: flex;
+    align-items: center;
     position: absolute;
+    
     gap: 5px;
     left: 20px;
 
@@ -1013,6 +1016,8 @@ address {
 
 .backspace-link {
     position: absolute;
+    display: flex;
+    align-items: center;
     margin-left: -15px;
     opacity: 0;
     transition: 0.5s;
@@ -2530,11 +2535,11 @@ address {
     text-transform: none;
 }
 
-.main-product__details__top > button {
+.main-product__details__top button {
     font-weight: 600;
 }
 
-.main-product__details__top > button:hover {
+.main-product__details__top button:hover {
     background-color: var(--dark-color);
     color: var(--light-color);
 }
@@ -2620,6 +2625,89 @@ address {
 }
 
 /*<---end of product.html---> */
+
+/*<---start of product-details.html---> */
+
+.header-product-details {
+    background: none;
+    background-color: var(--neo-color);
+    min-height: 70vh;
+}
+
+.header-product-details__hero {
+    line-height: 0;
+}
+
+.header-product-details__img {
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.main-product-details__infos__top {
+    display: flex;
+    justify-content: space-between;
+
+
+    margin: 60px 100px 0 100px;
+}
+
+.main-product-details__infos__top > h1 {
+    text-transform: none;
+    color: var(--shopping-color);
+}
+
+.main-product-details__infos__para {
+    margin: 20px 100px 0 100px;
+    color: var(--dark-color);
+}
+
+.main-product-details__infos__buttons__return {
+    display: flex;
+    gap: 50px;
+    position: absolute;
+    align-items: center;
+    left: 20px;
+}
+
+.main-product-details__infos__buttons__return__link {
+    margin-left: 30px;
+    transition: 0.5s;
+}
+
+.main-product-details__infos__buttons__return__link {
+    margin-left: 30px;
+    transition: 0.5s;
+}
+
+.main-product-details__infos__buttons__return:hover .backspace-link {
+    opacity: 1;
+    margin-left: 0;
+}
+
+.main-product-details__infos__buttons__return:hover .hide-backspace-link {
+    opacity: 0;
+    z-index: -999;
+}
+
+
+.main-product-details__infos__buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+
+    margin-top: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+
+    color: var(--dark-color);
+}
+
+
+
+/*<---end of product-details.html---> */
 
 /*<---start of about-us.html---> */
 .header-about-us {
@@ -2924,6 +3012,7 @@ address {
 
 .header-employe__details__items h1 {
     font-weight: 600;
+    font-size: var(--gigantic-text);
     text-transform: none;
 }
 

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Details</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+</head>
+<body class="product-details">
+    <header class="header-product-details">
+        <menu class="top-menu">
+            <div class="top-menu__language-toggle">
+                <a href="">FR</a>
+            </div>
+            <ul class="top-menu right">
+                <li class="top-menu__nav about-us"><a class="top-menu__title" href="about-us.html">About Us</a></li>
+                <li class="top-menu__nav login"><a class="top-menu__title" href="">Login</a></li>
+                <li class="top-menu__nav contact-us"><a href="contact.html">Contact US</a></li>
+            </ul>    
+        </menu>
+        <menu class="bottom-menu">
+            <div class="bottom-menu__nav-logo"><a href="index.html"><img class="logo" src="images/main.light.en.png" alt="neo shopping logo"></a></div>
+            <div class="bottom-menu__navbar">
+                <ul class="navbar__menu">
+                    <li class="menu__link">
+                        <a class="menu__link__title" href="">Networks</a>
+                        <div class="menu__link__dropdown full-block"></div>
+                        <ul class="menu__link__dropdown link-js">
+                            <li class="dropdown__elements" data-network="shopping"><a href="networks.html">Shopping Mall</a></li>
+                            <li class="dropdown__elements" data-network="on-the-go"><a href="">Service Station</a></li>
+                            <li class="dropdown__elements" data-network="on-the-go"><a href="">Convenience Store</a></li>
+                            <li class="dropdown__elements" data-network="fitness"><a href="">Gym</a></li>
+                            <li class="dropdown__elements" data-network="mobile"><a href="">Mobile</a></li>
+                            <li class="dropdown__elements" data-network="speed"><a href="">Experiential</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__link"><a class="menu__link__title" href="products.html">Products</a></li>
+                    <li class="menu__link"><a class="menu__link__title" href="">Partners</a></li>
+                    <li class="menu__link"><a class="menu__link__title" href="markets.html">Markets</a></li>
+                    <li class="menu__link"><a class="menu__link__title" href="advertisers.html">Advertisers</a></li>
+                </ul>
+                <div class="navbar__search">
+                    <span class="material-symbols-outlined">search</span>
+                    <span>
+                        <form method="GET" action="" role="search" id="search-form">
+                            <input required="" name="" placeholder="Search" id="search-input" spellcheck="false" dir="auto" type="text">
+                            <button class="search-btn" type="submit"></button>
+                        </form>
+                    </span>
+                </div>
+            </div>
+        </menu>
+        <div class="header-product-details__hero">
+            <img class="header-product-details__img" src="images/digital-spectacular-erin-mills.jpg" alt="digital advertising erin Mills centre">
+        </div>
+    </header>
+    <main class="main-product-details">
+        <div class="main-product-details__infos">
+            <div class="main-product-details__infos__top">
+                <h1>Shopping LED Spectacular</h1>
+            </div>
+            <div class="main-product-details__infos__para">
+                <p>
+                    We now offer several Spectacular products using LED technology. Located in areas with high potential, these units will allow you to
+                    capture all the attention by displaying your colors.
+                </p>
+            </div>
+            <div class="main-product-details__infos__buttons">
+                <div class="main-product-details__infos__buttons__return">
+                    <a class="backspace-link" href="products.html"><span class="material-symbols-outlined">keyboard_backspace</span></a>
+                    <span class="material-symbols-outlined hide-backspace-link">keyboard_backspace</span>
+                    <a class="main-product-details__infos__buttons__return__link" href="products.html">Return to Shopping</a>
+                </div>
+                <button class="details-buttons light-button">Locations<span class="material-symbols-outlined">pin_drop</span></button>
+                <button class="details-buttons light-button">Technical Specs<span class="material-symbols-outlined">download</span></button>
+                <button class="details-buttons dark-button">Contact sales team<span class="material-symbols-outlined">mail</span></button>
+            </div>
+        </div>
+        <div class="main-product__networks">
+            <div class="main-product__networks__title">
+                <h2>Extend your reach with our other<br>Digital Networks</h2>
+            </div>
+            <ul class="main-product__networks__buttons">
+                <li><a href=""><button>Service Stations</button></a></li>
+                <li><a href=""><button>Convenience Stores</button></a></li>
+                <li><a href=""><button>Gyms</button></a></li>
+                <li><a href=""><button>Mobile</button></a></li>
+            </ul>
+        </div>
+
+    </main>
+    
+    <footer>
+        <div class="footer-top-menu">
+            <ul class="footer-top-menu__list">
+                <li>
+                    <h5><a class="hover-link" href="">Networks</a></h5>
+                </li>
+                <li><a class="hover-link" href="">Shopping Mall</a></li>
+                <li><a class="hover-link" href="">Service Station</a></li>
+                <li><a class="hover-link" href="">Convenience Store</a></li>
+                <li><a class="hover-link" href="">Gym</a></li>
+                <li><a class="hover-link" href="">Mobile</a></li>
+                <li><a class="hover-link" href="">Experiential</a></li>
+            </ul>
+            <ul class="footer-top-menu__list">
+                <li>
+                    <h5><a class="hover-link" href="">Products</a></h5>
+                </li>
+                <li><a class="hover-link" href="">Shopping Mall</a></li>
+                <li><a class="hover-link" href="">Service Station</a></li>
+                <li><a class="hover-link" href="">Convenience Store</a></li>
+                <li><a class="hover-link" href="">Gym</a></li>
+                <li><a class="hover-link" href="">Mobile</a></li>
+            </ul>
+            <ul class="footer-top-menu__list">
+                <li>
+                    <h5><a class="hover-link" href="">Markets</a></h5>
+                </li>
+                <li><a class="hover-link" href="">Québec</a></li>
+                <li><a class="hover-link" href="">Ontario</a></li>
+                <li><a class="hover-link" href="">East</a></li>
+                <li><a class="hover-link" href="">West</a></li>
+            </ul>
+            <ul class="footer-top-menu__list">
+                <li>
+                    <h5><a class="hover-link" href="">About us</a></h5>
+                </li>
+                <li><a class="hover-link" href="">Our Company</a></li>
+                <li><a class="hover-link" href="">Our History</a></li>
+                <li><a class="hover-link" href="">Our Amazing Team</a></li>
+                <li><a class="hover-link" href="">Our Partners</a></li>
+                <li><a class="hover-link" href="">Our Clients</a></li>
+            </ul>
+            <ul class="footer-top-menu__list">
+                <li>
+                    <h5><a class="hover-link" href="">Contact us</a></h5>
+                </li>
+                <address>
+                    <a class="hover-link" href="info@neo-ooh.com">info@neo-ooh.com</a><br> 
+                    Neo-Traffic Media inc.<br>
+                    3700 St-Patrick, 318<br>
+                    Montréal, Qc,<br>
+                    H4E 1A2
+                </address>
+            </ul>
+        </div>
+        <div class="footer-bottom-menu">
+            <a href="index.html"><img class="logo" src="images/main.light.en.png" alt="neo shopping logo"></a>
+            <div class="footer-bottom-menu__rights">©2023. Neo - Out of Home all rights reserved.</div>
+            <div class="footer-bottom-menu__social">
+                <ul>
+                    <li><a href="https://www.linkedin.com/company/neo-ooh/" target="_blank"><img class="linkedin-icon" src="images/icons8-linkedin-48 (1).png" alt="linkedin logo"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="productsScript.js"></script>
+    <script src="mainMenu.js"></script>
+</body>
+</html>
