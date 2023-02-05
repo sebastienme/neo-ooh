@@ -2,6 +2,7 @@ let employe = [
     {
         "name" : "Ronald Tapiéro",
         "id" : "1",
+        "email" : "rtapiero@neo-ooh.com",
         "imageSrc" : "Ronald.jpg",
         "altAtt" : "Ronald Tapiero",
         "title" : "President, General Manager",
@@ -11,6 +12,7 @@ let employe = [
     {
         "name" : "Ziad Balti",
         "id" : "2",
+        "email" : "zbalti@neo-ooh.com",
         "imageSrc" : "Ziad.jpg",
         "altAtt" : "Ziad Balti",
         "title" : "VP Finance, Numbers guy",
@@ -20,6 +22,7 @@ let employe = [
     {
         "name" : "Luc Quétel",
         "id" : "3",
+        "email" : "lquetel@neo-ooh.com",
         "imageSrc" : "Luc.jpg",
         "altAtt" : "Luc Quetel",
         "title" : "Executive VP Partner",
@@ -29,6 +32,7 @@ let employe = [
     {
         "name" : "Ismaël Alaoui",
         "id" : "4",
+        "email" : "ismael.alaoui@neo-ooh.com",
         "imageSrc" : "Ismael.jpg",
         "altAtt" : "Ismael Alaoui",
         "title" : "Co-Founder Pompe Media",
@@ -38,6 +42,7 @@ let employe = [
     {
         "name" : "Jordana Fatsis",
         "id" : "5",
+        "email" : "jfatsis@neo-ooh.com",
         "imageSrc" : "Jordana.jpg",
         "altAtt" : "Jordana Fatsis",
         "title" : "Executive VP of Sales",
@@ -47,6 +52,7 @@ let employe = [
     {
         "name" : "Sylvain Béland",
         "id" : "6",
+        "email" : "sylvain.beland@neo-ooh.com",
         "imageSrc" : "Sylvain.jpg",
         "altAtt" : "Sylvain Béland",
         "title" : "VP Pompe Media",
@@ -56,6 +62,7 @@ let employe = [
     {
         "name" : "Martin Dubois",
         "id" : "7",
+        "email" : "martin.dubois@pompemedia.ca",
         "imageSrc" : "Martin.jpg",
         "altAtt" : "Martin Dubois",
         "title" : "Fondateur Pompe Media",
@@ -65,6 +72,7 @@ let employe = [
     {
         "name" : "Andréa Laxenaire",
         "id" : "8",
+        "email" : "alaxenaire@neo-ooh.com",
         "imageSrc" : "Andrea.jpg",
         "altAtt" : "Andrea Laxenaire",
         "title" : "Business Development Coordinator",
@@ -74,6 +82,7 @@ let employe = [
     {
         "name" : "Antoine Decoux",
         "id" : "9",
+        "email" : "adecoux@neo-ooh.com",
         "imageSrc" : "Antoine.jpg",
         "altAtt" : "Antoine Decoux",
         "title" : "Ad Campaigns Manager",
@@ -83,6 +92,7 @@ let employe = [
     {
         "name" : "Félix Lamothe",
         "id" : "10",
+        "email" : "flamothe@neo-ooh.com",
         "imageSrc" : "Felix.jpg",
         "altAtt" : "Felix Lamothe",
         "title" : "Account Executive",
@@ -92,6 +102,7 @@ let employe = [
     {
         "name" : "Jennifer Zito",
         "id" : "11",
+        "email" : "jzito@neo-ooh.com",
         "imageSrc" : "Jennifer.jpg",
         "altAtt" : "Jennifer Zito",
         "title" : "Account Executive",
@@ -101,6 +112,7 @@ let employe = [
     {
         "name" : "Karen Reynolds",
         "id" : "12",
+        "email" : "kreynolds@neo-ooh.com",
         "imageSrc" : "Karen.jpg",
         "altAtt" : "Karen Reynolds",
         "title" : "Senior Account Executive",
@@ -108,10 +120,11 @@ let employe = [
         "linkedin" : "https://www.linkedin.com/company/neo-ooh/"
     },
     {
-        "name" : "Mariusz",
+        "name" : "Mariusz Obarzanowski",
         "id" : "13",
+        "email" : "mobarzanowski@neo-ooh.com",
         "imageSrc" : "Mariusz.jpg",
-        "altAtt" : "Mariusz",
+        "altAtt" : "Mariusz ObarZanowski",
         "title" : "IT Lover",
         "description" : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
         "linkedin" : "https://www.linkedin.com/company/neo-ooh/"
@@ -119,6 +132,7 @@ let employe = [
     {
         "name" : "Attilio Della Neve",
         "id" : "14",
+        "email" : "adellaneve@neo-ooh.com",
         "imageSrc" : "Attilio.jpg",
         "altAtt" : "Attilio",
         "title" : "IT Master",
@@ -128,6 +142,7 @@ let employe = [
     {
         "name" : "Sébastien Meslage",
         "id" : "15",
+        "email" : "smeslage@neo-ooh.com",
         "imageSrc" : "Sebastien.jpg",
         "altAtt" : "Sebastien Meslage",
         "title" : "Special Project & Technologies",
@@ -137,6 +152,7 @@ let employe = [
     {
         "name" : "Pierre Dulude",
         "id" : "16",
+        "email" : "pdulude@neo-ooh.com",
         "imageSrc" : "Pierre.jpg",
         "altAtt" : "Pierre Dulude",
         "title" : "Operations",
@@ -146,6 +162,7 @@ let employe = [
     {
         "name" : "Nilay Incegul",
         "id" : "17",
+        "email" : "nincegul@neo-ooh.com",
         "imageSrc" : "Nilay.jpg",
         "altAtt" : "Nilay Incegul",
         "title" : "Sales Coordinator",
@@ -153,8 +170,9 @@ let employe = [
         "linkedin" : "https://www.linkedin.com/company/neo-ooh/"
     },
     {
-        "name" : "Ophélie",
+        "name" : "Ophélie Nieddu",
         "id" : "18",
+        "email" : "ophelie.nieddu@neo-ooh.com",
         "imageSrc" : "Ophelie.jpg",
         "altAtt" : "Ophélie",
         "title" : "Sales Coordinator",
@@ -183,7 +201,8 @@ function generateHeaderEmploye(idOfEmploye) {
     const title = document.querySelector('.header-employe__details__items__role');
     const description = document.querySelector('.employe__bottom > p');
     const image = document.querySelector('.header-employe__image > img');
-    const linkedinLink = document.querySelector('.employe__bottom__personal > a');
+    const linkedinLink = document.querySelector('.employe__bottom__personal a');
+    const emailText = document.querySelector('.employe__bottom__personal__email__text__name');
 
     let employeToDisplay = employe.find(emp => emp.id == idOfEmploye);
     
@@ -193,8 +212,10 @@ function generateHeaderEmploye(idOfEmploye) {
     description.innerHTML = `${employeToDisplay.description}`;
     image.src = `images/${employeToDisplay.imageSrc}`;
     linkedinLink.setAttribute('href', employeToDisplay.linkedin);
+    emailText.innerHTML = `${employeToDisplay.email}`;
 
     window.scrollTo(0, 0);
+    toolTipText.forEach((element) => element.innerHTML = 'Copy email address');
 }
 
 //employee list
@@ -237,10 +258,23 @@ employeImage.forEach((element) => {
     })
 })
 
+
+//function to change (or remove) after integreting with Bolt cms
 window.onload = function () {
     console.log(window.location.search.split('?')[1]);
 
     let employeIdNumber = window.location.search.split('?')[1];
 
     generateHeaderEmploye(employeIdNumber);
+}
+
+const toolTipText = document.querySelectorAll('.tooltiptext')
+
+function copyToClipboard() {
+    const email = document.querySelector('.employe__bottom__personal__email__text__name');
+
+    // Copy the text inside the text field
+    navigator.clipboard.writeText(email.innerHTML);
+
+    toolTipText.forEach((element) => element.innerHTML = 'email copied');
 }

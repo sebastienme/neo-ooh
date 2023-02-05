@@ -2834,10 +2834,6 @@ address {
     transition: 300ms ease-out;
 }
 
-.employe-div__img {
-
-}
-
 .employe-div > img:hover {
     transform: scale(1.1);
     transition: 300ms ease;
@@ -2857,6 +2853,12 @@ address {
     font-size: var(--small-text);
     font-weight: 200;
     line-height: 1;
+}
+
+.employe__details__email {
+    font-size: var(--small-text);
+    font-weight: 200;
+    line-height: 2;
 }
 
 .linkedin-icon.about-us {
@@ -3048,17 +3050,95 @@ address {
 
 .employe__bottom__personal {
     display: flex;
-    justify-content: flex-end;
-    gap: 15px;
+    flex-direction: column;
+    align-items: flex-end;
 
     margin-right: 100px;
     padding-bottom: 35px;
+}
+
+.flex-direction-section {
+    display: flex;
+    gap: 15px;
 }
 
 .employe__bottom__personal__name {
     font-size: var(h5);
     font-weight: 600;
 }
+
+.employe__bottom__personal__email {
+    display: flex;
+    gap: 15px;
+
+    font-size: var(--small-text);
+}
+
+.employe__bottom__personal__email__text {
+    position: relative;
+}
+
+.employe__bottom__personal__email__text:hover {
+    color: var(--dark-color);
+    cursor: pointer;
+}
+
+.copy-logo-div {
+    position: relative;
+}
+
+#copy-logo {
+    font-size: 1rem;
+    font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 200, 'opsz' 48;
+}
+
+#copy-logo:hover {
+    cursor: pointer;
+}
+
+#copy-logo:active {
+    font-variation-settings: 'FILL' 1, 'wght' 300, 'GRAD' 200, 'opsz' 48;
+}
+  
+  .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: var(--grey-color);
+    color: var(--neo-color);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 6px;
+    font-size: var(--smaller-text);
+  }
+  
+  .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--grey-color) transparent transparent transparent;
+  }
+  
+  .employe__bottom__personal__email__text:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .copy-logo-div:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
 
 .about-us__people__cards.dark-section{
     position: relative;

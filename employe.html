@@ -67,12 +67,25 @@
             <div class="header-employe__image"><img src="images/Ronald.jpg" alt="Ronald Tapiero"></div>
         </div>
     </header>
+    <!-- See Javascript function -->
     <div class="employe__bottom">
         <p>
         </p>
         <div class="employe__bottom__personal">
-            <div class="employe__bottom__personal__name"></div>
-            <a href="https://www.linkedin.com/company/neo-ooh/" target="_blank"><img class="linkedin-icon about-us" src="images/LinkedIn_logo_initials.png" alt="linkedin logo"></a>
+            <div class="flex-direction-section">
+                <div class="employe__bottom__personal__name"></div>
+                <a href="https://www.linkedin.com/company/neo-ooh/" target="_blank"><img class="linkedin-icon about-us" src="images/LinkedIn_logo_initials.png" alt="linkedin logo"></a>
+            </div>
+            <div class="employe__bottom__personal__email">
+                <div onclick="copyToClipboard()" class="employe__bottom__personal__email__text">
+                    <div class="employe__bottom__personal__email__text__name"></div>
+                    <span class="tooltiptext" id="myTooltip">Copy email address</span>
+                </div>
+                <div class="copy-logo-div">
+                    <span onclick="copyToClipboard()" id="copy-logo" class="material-symbols-outlined">content_copy</span>
+                    <span class="tooltiptext" id="myTooltip">Copy email address</span>
+                </div>
+            </div>
         </div>
     </div>
     <main class="main-about-us main-employe">
