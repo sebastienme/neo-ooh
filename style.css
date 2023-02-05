@@ -491,6 +491,17 @@ address {
 .prompt {
     font-size: 1rem;
     font-weight: 300;
+    line-height: 1;
+}
+
+.prompt > p {
+    margin: 0;
+    line-height: 0;
+}
+
+.smile-logo {
+    width: 30px;
+    margin-top: 5px;
 }
 
 .main-networks__containter-main__top__titles {
@@ -1044,6 +1055,10 @@ address {
     z-index: -999;
 }
 
+.carousel__top__return:hover .carousel__top__return__link {
+    padding-left: 10px;
+}
+
 .carousel__top__option-display {
     display: flex;
 }
@@ -1572,6 +1587,11 @@ address {
 .prompt {
     font-size: 1rem;
     font-weight: 300;
+}
+
+.smile-logo.data {
+    width: 30px;
+    margin-top: 15px;
 }
 
 .main-advertisers__containter-main__top__titles {
@@ -2689,6 +2709,10 @@ address {
 .main-product-details__infos__buttons__return:hover .hide-backspace-link {
     opacity: 0;
     z-index: -999;
+}
+
+.main-product-details__infos__buttons__return:hover .main-product-details__infos__buttons__return__link {
+    padding-left: 10px;
 }
 
 
